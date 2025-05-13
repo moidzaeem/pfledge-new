@@ -1,0 +1,2497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>pFlegepur</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="./Images/favicon.png" />
+
+    <script src="./index.js"></script>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div
+      class="header-container service-header-bg"
+      style="
+        background-image: url('./Images/Newundrateger_header_bg.svg') !important;
+      "
+    >
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid navbar-container justify-content-between">
+          <a href="./index.html"
+            ><img src="./Images/pflegepur_logo.svg" alt="PflegePur Logo"
+          /></a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a href="./services.html" class="nav-link">Service</a>
+                <ul class="dropdown-menu" style="background-color: #000000">
+                  <li
+                    style="
+                      margin-top: 0.35rem;
+                      margin-bottom: 0.7rem;
+                      border-bottom: 1px solid #ffffffbd;
+                      padding-bottom: 0.8rem;
+                    "
+                  >
+                    <a
+                      style="border: none; text-decoration: none"
+                      href="checklisten.html"
+                      >Checklisten</a
+                    >
+                  </li>
+                  <li
+                    style="
+                      margin-bottom: 0.7rem;
+                      border-bottom: 1px solid #ffffffbd;
+                      padding-bottom: 0.8rem;
+                    "
+                  >
+                    <a
+                      style="border: none; text-decoration: none"
+                      href="online_rechner.html"
+                      >Online-Rechner</a
+                    >
+                  </li>
+                  <li style="margin-bottom: 0.5rem">
+                    <a
+                      style="border: none; text-decoration: none"
+                      href="musteranschreiben.html"
+                      >Musteranschreiben</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="blog.html"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="newsundratgeber.html"
+                  >News und Ratgeber</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="marktplatz.html"
+                  >Marktplatz</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="buecher.html"
+                  >Bücher</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  style="border: none"
+                  aria-current="page"
+                  href="academy.html"
+                  >Academy</a
+                >
+              </li>
+              <li class="nav-item nav-btn">
+                <button class="nav-link" aria-current="page" style="position: relative;">
+                  <a
+                    href="./partner.html"
+                    style="
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      height: 100%;
+                      border-radius: 10px;
+                      width: 100%;
+                    "
+                  ></a>
+                  Partner werden!
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="service-header-content">
+        <span>Aktuelles und praktische Tipps rund um Pflege und Betreuung</span>
+        <div>News und Ratgeber</div>
+      </div>
+    </div>
+
+    <!-- ########################### NEWS UND RATGEBER SECTION 1 ########################### -->
+
+    <div class="newsund-ratgeber-section1">
+      <div class="newsund-ratgeber-btn-top">
+        <div class="newsund-btn1 newsund-btn">
+          <button><a href="./newsundratgeber.html">News</a></button>
+        </div>
+        <div class="newsund-btn2 newsund-btn">
+          <button>
+            <a style="color: #b22222" href="./newsundratgeber2.html"
+              >Ratgeber</a
+            >
+          </button>
+        </div>
+      </div>
+
+      <div class="newsund-ratgeber-btn-bottom">
+        <div style="display: flex; gap: 0.7rem">
+          <div class="newsund-btn3 newsund-btn">
+            <button
+              id="news-bottom-btn1 "
+              class="news-und-btns news-active-btn"
+            >
+              Ärztezeitung
+            </button>
+          </div>
+          <div class="newsund-btn4 newsund-btn">
+            <button class="news-und-btns" id="news-bottom-btn2">
+              Ärztenachrichtendienst
+            </button>
+          </div>
+        </div>
+        <div class="newsund-btn5 newsund-btn text-center">
+          <button class="news-und-btns" id="news-bottom-btn3">
+            Bundesministerium für Gesundheit (BMG)
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ########################### NEWS UND RATGEBER SECTION 2 ########################### -->
+    <div class="newsund-section2">
+      <!-- ######################## Ärztezeitung CONTENT ######################## -->
+      <div class="newund-section2-row row" id="newsund-section2-content1">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  LSG Potsdam: Tabletten holen ist meist Privatsache
+                </div>
+                <div class="newsund-section2-card-content">
+                  Weil sie Tabletten im Auto vergessen hatte, machte die
+                  Klägerin eine Arbeitspause – und stürzte auf dem Rückweg. Das
+                  Gericht lehnte eine Entschädigung als Arbeitsunfall ab.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 29.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Tuberkulose löst COVID als tödlichste Infektionskrankheit
+                  wieder ab
+                </div>
+                <div class="newsund-section2-card-content">
+                  Ohne Behandlung stirbt annähernd jeder zweite Infizierte an
+                  der bakteriellen Infektion Tuberkulose. Der Leiter des
+                  Globalen Fonds zur Bekämpfung von Infektionskrankheiten Peter
+                  Sands fordert mehr Mittel.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 29.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Pneumonie bei Kindern: Antibiotika wohl nicht immer
+                  erforderlich
+                </div>
+                <div class="newsund-section2-card-content">
+                  In einer Studie nahm sich ein amerikanisches Team der Frage
+                  an, ob sofortige Antibiotikagabe bei allen Kindern mit
+                  ambulant behandelter Lungenentzündung tatsächlich nötig sei.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 29.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Kaum Daten aus Deutschland zu Corona-Impfungen
+                </div>
+                <div class="newsund-section2-card-content">
+                  Das ECDC hat im vergangenen Jahr seine Analyse der
+                  COVID-Impfdaten aktualisiert. Diese wurden nun veröffentlicht,
+                  allerdings sind Daten aus Deutschland rar.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 29.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Bundesregierung: Sechsstellige Zahl von Betroffenen mit
+                  Long-COVID
+                </div>
+                <div class="newsund-section2-card-content">
+                  Die Bundesregierung beziffert in der Antwort auf eine Anfrage
+                  der AfD die Zahl der Menschen mit Long-COVID auf etwa 600.000.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 29.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Akkreditierte Labore gegen Infektionsdiagnostik in der
+                  Apotheke
+                </div>
+                <div class="newsund-section2-card-content">
+                  Der Verband Akkreditierte Labore in der Medizin (ALM) zeigt
+                  sich vergrätzt, dass ein Lauterbach-Vorhaben jetzt im
+                  geplanten ÖGD-Gesetz auftaucht: Bei bestimmten Schnelltests
+                  soll der Arztvorbehalt fallen.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 29.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  KV Niedersachsen für Beibehaltung der Telefon-AU
+                </div>
+                <div class="newsund-section2-card-content">
+                  In die Diskussion um die telefonische Krankschreibung hat sich
+                  jetzt auch die KV Niedersachsen eingeschaltet und sich für
+                  deren Erhalt ausgesprochen.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 29.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Schlaganfallforschung: Hentschel-Preis für Montellano und
+                  Vollmuth
+                </div>
+                <div class="newsund-section2-card-content">
+                  Zwei Wissenschaftler aus der Würzburger Universitätsmedizin
+                  erhalten die mit 5000 Euro dotierte Auszeichnung für ihre
+                  Beiträge zur Schlaganfallforschung.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 29.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Auszeichnung für Direktor der Leipziger HNO-Klinik Andreas
+                  Dietz
+                </div>
+                <div class="newsund-section2-card-content">
+                  Für seine langjährige Verbindung zu den
+                  HNO-Universitätskliniken in Budapest und Szeged ist Professor
+                  Andreas Dietz die Ehrenmitgliedschaft der ungarischen
+                  Gesellschaft für Otorhinolaryngologie verliehen worden.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 29.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Urteil: Aller guten Dinge sind bei Kinderwunschbehandlung
+                  mehrmals drei
+                </div>
+                <div class="newsund-section2-card-content">
+                  Das LSG Berlin-Brandenburg urteilt, dass Paare mit unerfülltem
+                  Kinderwunsch nach drei erfolglosen Versuchen erneut einen
+                  Zuschuss von der Kasse verlangen können, wenn eine neue
+                  Methode angewandt wird.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 29.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Ist es gerecht, dass STIKO-Empfehlungen erst nach Monaten in
+                  die Regelversorgung kommen, Dr. Schrörs
+                </div>
+                <div class="newsund-section2-card-content">
+                  Der Weg einer STIKO-Impfempfehlung durch die Instanzen bis zur
+                  Aufnahme in die Regelversorgung dauert seine Zeit. Impfarzt
+                  Hans-Jürgen Schrörs findet das ungerecht und fordert im
+                  „ÄrzteTag“-Podcast pragmatische Lösungen.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 29.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  IGeL-Monitor: Positive Bewertung für Immuntherapie mit E. coli
+                </div>
+                <div class="newsund-section2-card-content">
+                  Endlich mal wieder eine Selbstzahlerleistung, die guten
+                  Gewissens angeboten werden kann: Eine Immuntherapie mit
+                  Uro-Vaxom gegen rezidivierende Blasenentzündungen ist
+                  nachgewiesenermaßen hilfreich.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 29.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Forscher zu Darmkrebs-Früherkennung: „Vorerst nicht zu einem
+                  Bluttest wechseln"
+                </div>
+                <div class="newsund-section2-card-content">
+                  Die Darmkrebs-Früherkennung im Blut ist attraktiv. Wenn jedoch
+                  zu viele Menschen von einer Koloskopie auf einen Bluttest
+                  umsteigen, könnte sich dies offenbar auf die Zahl der
+                  Todesfälle durch Darmkrebs auswirken.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 29.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  DGN: seltene neurologische Erkrankungen im Fokus
+                </div>
+                <div class="newsund-section2-card-content">
+                  In Deutschland leiden über vier Millionen Menschen an einer
+                  von bis zu 8.000 seltenen Erkrankungen. Drei in der Neurologie
+                  angesiedelte „Seltene“ sind die Spinale Muskelatrophie, die
+                  Friedreich-Ataxie und die Superoxid-Dismutase-1
+                  (SOD1)-assoziierte Amyotrophe Lateralsklerose.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 29.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Diabetisches Fußsyndrom: Klinisch stumme Gicht wegen
+                  Polyneuropathie zuerst nicht bemerkt?
+                </div>
+                <div class="newsund-section2-card-content">
+                  Hinter einem diabetischen Fußsyndrom kann sich auch eine
+                  andere Erkrankung verbergen, die asymptomatisch verläuft. Das
+                  haben Mediziner mit einer Kasuistik bei einem Kongress
+                  gezeigt.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 29.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ######################## Ärztenachrichtendienst CONTENT ######################## -->
+      <div class="newund-section2-row row" id="newsund-section2-content2">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Optimierte Therapie für Kreuzbandverletzungen
+                </div>
+                <div class="newsund-section2-card-content">
+                  Derzeit beruht die Therapieplanung von Knieverletzungen auf
+                  statischen Bildgebungen wie MRT, CT oder Röntgen. Eine im
+                  Projekt Plank entwickelte Simulation ermöglicht es nun, die
+                  optimale Position zur Fixierung des Kreuzbandes auf Basis
+                  dynamischer Modellierungen zu finden – dadurch würden
+                  Folgeschäden verhindert.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 29.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Kontinuierliches Glukosemanagement auch bei Diabetes Typ 2!
+                  wieder ab
+                </div>
+                <div class="newsund-section2-card-content">
+                  Technische Lösungen wie das kontinuierliche Glukosemanagement
+                  (CGM) sollten auch bei Menschen mit Diabetes Typ 2 verstärkt
+                  eingesetzt werden. Dafür setzte sich der Hamburger Diabetologe
+                  Dr. Jens Kröger auf einer Online-Pressekonferenz der Deutschen
+                  Diabetes Hilfe ein.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 29.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Wie männliches Geschlecht das kardiovaskuläre Risiko
+                  beeinflusst
+                </div>
+                <div class="newsund-section2-card-content">
+                  Soziokulturelle Normen und daraus entstehender Druck kann
+                  individuelles Verhalten, Vorlieben und Vorstellungen
+                  beeinflussen – so die These. Diese haben Forschende
+                  untersucht, indem sie den Zusammenhang zwischen dem Ausdruck
+                  männlicher Geschlechtsidentität und dem Umgang mit
+                  kardiovaskulärer Erkrankungen analysierten.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 29.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Neue Daten stützen Immuntherapie nach Zystektomie
+                </div>
+                <div class="newsund-section2-card-content">
+                  Patienten mit muskelinvasivem Harnblasenkarzinom (MIUC), die
+                  trotz radikaler Zystektomie ein hohes Rückfallrisiko haben,
+                  können von einer Immuntherapie mit dem PD1-Blocker Nivolumab
+                  profitieren. Das bestätigen neue Ergebnisse der “CheckMate
+                  274”-Phase 3-Studie.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 29.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Unbewusste Augenbewegungen optimieren das Sehen
+                </div>
+                <div class="newsund-section2-card-content">
+                  Bonner Forschende haben untersucht, wie das scharfe Sehen mit
+                  diesen winzigen Augenbewegungen und der Anordnung der Zapfen
+                  zusammenhängt. Mit Hilfe hochauflösender Bildgebung und
+                  Mikro-Psychophysik konnten sie zeigen, wie scharfes Sehen und
+                  Bewegung der Augen zusammenhängen.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 29.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Myopathie und Ptosis bei kleinem Mädchen
+                </div>
+                <div class="newsund-section2-card-content">
+                  Myopathien können zahlreiche Ursachen haben und in einem
+                  Artikel stellt ein Team aus Polen den Fall eines kleinen
+                  Mädchens vor, das ohne Vorerkrankungen mit knapp drei Jahren
+                  unspezifische okuläre Symptome sowie eine proximale Myopathie
+                  entwickelte – eine interdisziplinäre Herausforderung.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 28.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Kombi-Impfung auch mit adjuvantiertem Influenza-Impfstoff bei
+                  Älteren sicher
+                </div>
+                <div class="newsund-section2-card-content">
+                  Der kombinierte Schutz vor Grippe und Gürtelrose für Menschen
+                  ab 65 Jahren ist auch mit Impfstoffen sicher möglich, die
+                  neuere Adjuvanzien ohne Aluminium enthalten. Zu diesem Schluss
+                  kommt eine aktuelle US-Studie.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 28.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Obacht vor Verlust der Muskelmasse
+                </div>
+                <div class="newsund-section2-card-content">
+                  In einem aktuellen Leitartikel in The Lancet hat ein Team von
+                  Kliniken und Forscherinnen ein Thema in den Fokus gerückt, das
+                  ihnen zufolge im Rahmen der zunehmenden Verschreibung von
+                  GLP-1-Agonisten zu wenig adressiert werde, und zwar der
+                  Verlust an Muskelmasse.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 28.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Wer jung schlecht schläft, altert womöglich schneller
+                </div>
+                <div class="newsund-section2-card-content">
+                  Zwischen Schlaf und neurodegenerativen Erkrankungen besteht
+                  ein enger Zusammenhang. Ergebnisse einer aktuellen
+                  Beobachtungs- und Bildgebungsstudie weisen darauf hin, dass
+                  schlechter Schlaf schon in jüngerem Alter Alterungsprozesse im
+                  Gehirn beschleunigt.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 28.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Hohe Komorbiditätslast bei Menschen mit chronischer
+                  Nierenkrankheit
+                </div>
+                <div class="newsund-section2-card-content">
+                  Patientinnen und Patienten mit diagnostizierter chronischer
+                  Nierenkrankheit sind signifikant häufiger von weiteren
+                  chronischen Erkrankungen betroffen als Menschen ohne
+                  Nierenkrankheiten. Das zeigt eine aktuelle Studie des
+                  Zentralinstituts für die kassenärztliche Versorgung.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 28.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Depression: Immer mehr Diagnosen bei jungen Menschen
+                </div>
+                <div class="newsund-section2-card-content">
+                  Immer mehr junge Menschen erhalten die Diagnose Depression.
+                  Das geht aus einer aktuellen Auswertung des Barmer-Instituts
+                  für Gesundheitssystemforschung (bifg) hervor. Demnach bekamen
+                  im Jahr 2018 bundesweit gut 316.000 junge Menschen zwischen
+                  fünf und 24 Jahren eine depressive Episode diagnostiziert.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 28.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  „Alte Studienergebnisse verhindern ein sinnvolles Umdenken“
+                </div>
+                <div class="newsund-section2-card-content">
+                  Bis zur Menopause besitzen Frauen offenbar einen gewissen
+                  Herz-Kreislauf-Schutz. Nach den Wechseljahren nähern sie sich
+                  den Erkrankungszahlen von Männern immer mehr an. Die Frage, ob
+                  eine Hormontherapie (HRT) auch nach den Wechseljahren das
+                  weibliche Herz-Kreislauf-Risiko minimieren könnte, erörterte
+                  der änd mit der gynäkologischen Endokrinologin Prof. Sabine
+                  Segerer.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 28.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Plädoyer für die niederschwellige Verschreibung von Statinen
+                </div>
+                <div class="newsund-section2-card-content">
+                  Einer aktuellen gesundheitsökonomischen Analyse zufolge soll
+                  eine frühzeitige Statintherapie bereits ab einem
+                  kardiovaskulären Risiko von 7,5 Prozent über einen Zeitraum
+                  von zehn Jahren in jedem Lebensalter mit Kosten von 410 bis
+                  2100 Euro pro gewonnenem Lebensjahr „sehr kosteneffektiv“
+                  sein.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 27.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Gerade Syphilis-Betroffene können vom Delabeling profitieren
+                </div>
+                <div class="newsund-section2-card-content">
+                  Nur etwa zehn Prozent der Menschen mit dem Label
+                  Penicillin-Allergie haben eine tatsächliche Allergie, erklären
+                  US-Forschende. Wer einmal eine Pencillin-Allergie dokumentiert
+                  hat, werde das Label nicht so leicht los – gerade bei Syphilis
+                  solle man sich einer aktuellen Studie zufolge trauen.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 27.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ######################## Bundesministerium für Gesundheit (BMG) CONTENT ######################## -->
+
+      <div class="newund-section2-row row" id="newsund-section2-content3">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Lauterbach: Reform der Notfallversorgung rettet Menschenleben
+                </div>
+                <div class="newsund-section2-card-content">
+                  Jeden Tag sterben in Deutschland Menschen, die nicht sterben
+                  müssten, wenn wir ein besseres Notfallsystem hätten“, so
+                  Bundesgesundheitsminister Prof. Karl Lauterbach bei der 1.
+                  Lesung im Bundestag zur Reform der Notfallversorgung. Lesen
+                  Sie hier die gesamte Rede.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 09.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Lauterbach: Durchbruch bei der Krankenhausreform
+                </div>
+                <div class="newsund-section2-card-content">
+                  Nach intensiven Verhandlungen haben sich die
+                  Regierungsfraktionen und das Bundesgesundheitsministerium auf
+                  die letzte Fassung der Krankenhausreform geeinigt. „Von den
+                  Grundzügen der Reform machen wir keine Abstriche. Wir halten
+                  unser Qualitätsversprechen und haben sinnvolle Anregungen,
+                  insbesondere zur ambulanten Facharztversorgung in ländlichen
+                  Gebieten und der Kinderbehandlung, aufgenommen“, erklärt
+                  Bundesgesundheitsminister Prof. Lauterbach. Damit ist der Weg
+                  für die Verabschiedung im Bundestag Ende Oktober frei.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 08.10.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Lauterbach: Alle Gesundheitsdaten auf einen Blick zu haben,
+                  wird die Behandlung entscheidend verbessern
+                </div>
+                <div class="newsund-section2-card-content">
+                  Gut 100 Tage vor dem Start der „ePA für alle“ startet das
+                  Bundesministerium für Gesundheit eine Aufklärungskampagne zur
+                  elektronischen Patientenakte. „Die elektronische Patientenakte
+                  bringt nur Vorteile: bessere Therapie, weniger
+                  Behandlungsfehler, bessere Forschung, weniger Bürokratie.
+                  Darüber wollen wir mit den Menschen ins Gespräch kommen“, so
+                  Bundesgesundheitsminister Prof. Karl Lauterbach.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 30.09.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Lauterbach: Bessere Patientenversorgung und Forschung in
+                  Deutschland
+                </div>
+                <div class="newsund-section2-card-content">
+                  Der Bundesrat hat die Beratungen zum Medizinforschungsgesetz
+                  abgeschlossen. Mit dem Gesetz werden die Rahmenbedingungen für
+                  die Entwicklung, Zulassung und Herstellung von Arzneimitteln
+                  und Medizinprodukten in Deutschland verbessert und
+                  Forschungsanreize gesetzt. „Mit dem Medizinforschungsgesetz
+                  stärken wir die Versorgung der Patienten und den
+                  Forschungsstandort Deutschland“, so der
+                  Bundesgesundheitsminister.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 27.09.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Neues Bundesinstitut - Lauterbach: Können mit Vorbeugung die
+                  Lebenserwartung in Deutschland verbessern
+                </div>
+                <div class="newsund-section2-card-content">
+                  „Krebs, Herz-Kreislauf-Erkrankungen und Demenz sind die drei
+                  apokalyptischen Reiter der Gesundheit in unserer Bevölkerung
+                  und wir müssen ihnen endlich etwas entgegenstellen. Das BIPAM
+                  wird uns dies wirkungsvoll ermöglichen." In seiner
+                  Bundestagsrede zur 1. Lesung des Gesetzes sprach
+                  Bundesgesundheitsminister Prof. Karl Lauterbach über die
+                  Notwendigkeit des Bundesinstituts für Prävention und
+                  Aufklärung in der Medizin (BIPAM) und eine bessere
+                  Lebenserwartung durch bessere Vorbeugemedizin.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 25.09.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Lauterbach: Medizinische Hilfe für Ukraine entscheidend im
+                  Kampf gegen russische Invasion
+                </div>
+                <div class="newsund-section2-card-content">
+                  Deutschland stellt zusätzlich bis zu 50 Mio. Euro für die
+                  Aufnahme und Behandlung verletzter ukrainischer Soldatinnen
+                  und Soldaten bereit. Die Kosten für die stationäre Versorgung
+                  der Kriegs verletzten sollen künftig unbürokratisch durch das
+                  Bundesverwaltungsamt abgewickelt und beglichen werden. „Wir
+                  werden der Ukraine auch weiterhin helfen, ihre
+                  schwerverletzten Landsleute optimal zu versorgen“, so der
+                  Bundesgesundheitsminister.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 18.09.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Lauterbach: „Neue Impulse für die Long COVID Forschung und
+                  Versorgung"
+                </div>
+                <div class="newsund-section2-card-content">
+                  Neue Förderschwerpunkte für die Versorgung von
+                  Long-COVID-Patienten sowie zusätzliche Modellprojekte, die
+                  speziell auf die Bedürfnisse von Kindern und Jugendlichen
+                  ausgerichtet sind: der vierte Tisch Long COVID befasst sich
+                  mit dem aktuellen Stand von Forschung und Versorgung.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 17.09.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Lauterbach: Bei der Gesundheitspolitik gibt es in der Ampel
+                  echte Teamarbeit
+                </div>
+                <div class="newsund-section2-card-content">
+                  Im Interview mit dem Stern spricht Bundesgesundheitsminister
+                  Prof. Karl Lauterbach über die Umsetzung der
+                  Krankenhausreform, die vielen Häusern das finanzielle
+                  Überleben sichern soll: „Es ist eine riesige grundsätzliche
+                  Reform. Es war immer geplant, dass die Reform im Januar 2025
+                  in Kraft tritt, das ist nach wie vor das Ziel.“ Zudem zieht
+                  der Minister eine bisherige gesundheitspolitische Bilanz,
+                  spricht darüber, welche Vorhaben noch auf dem Weg sind - und
+                  wie die Zusammenarbeit in der Regierung klappt.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 30.08.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Lauterbach: „Wir müssen die Gesundheit der Herzen besser
+                  schützen“
+                </div>
+                <div class="newsund-section2-card-content">
+                  Das Bundeskabinett hat am 28. August den Entwurf zum
+                  „Gesundes-Herz-Gesetz“ beschlossen. Damit sollen
+                  Risikofaktoren von Herz-Kreislauf-Erkrankungen möglichst früh
+                  erkannt und bekämpft werden. „Mit diesem Gesetz können wir die
+                  Lebenserwartung und die Lebensqualität in Deutschland deutlich
+                  verbessern“, so Bundesgesundheitsminister Prof. Karl
+                  Lauterbach.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 28.08.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Schulung zur Cannabisprävention für Präventionsbeauftragte
+                  nach dem Konsumcannabisgesetz
+                </div>
+                <div class="newsund-section2-card-content">
+                  Mustercurriculum mit Rahmenkonzept, Schulungsmodulen und
+                  Empfehlungen zur Cannabisprävention veröffentlicht
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 07.08.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Deutschland nimmt Kinder aus zerstörtem Kinderkrankenhaus in
+                  Kiew auf
+                </div>
+                <div class="newsund-section2-card-content">
+                  Nach dem russischen Raketenangriff auf das Kinderkrankenhaus
+                  Ochmatdyt in Kiew hat Deutschland am 18. Juli acht
+                  schwerkranke Kinder evakuiert und aufgenommen, die zuvor dort
+                  behandelt wurden. „Wir werden sie in deutschen Spezialkliniken
+                  gut versorgen. Unsere Hilfe soll der Ukraine Hoffnung geben:
+                  Wir lassen die Ukraine nicht im Stich“, so
+                  Bundesgesundheitsminister Prof. Karl Lauterbach.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 18.07.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Lauterbach: Das Gesundheitswesen braucht eine Runderneuerung
+                </div>
+                <div class="newsund-section2-card-content">
+                  Mit vier Gesetzentwürfen, die das Bundeskabinett am 17. Juli
+                  beschlossen hat, setzt die Regierung die Runderneuerung des
+                  Gesundheitssystems fort: Die Notfallreform soll dafür sorgen,
+                  dass Menschen schneller und gezielt behandelt werden. Der
+                  Aufbau des Bundesinstituts BIPAM stärkt die Prävention. Mit
+                  dem Gesundheits-Digitalagentur-Gesetz wird die Aufholjagd in
+                  der Digitalisierung fortgesetzt. Und die
+                  Transplantations-Reform ermöglicht Überkreuzspenden von
+                  Nieren.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 17.07.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Lauterbach: Medizinforschungsgesetz macht Entwicklung von
+                  Arzneimitteln in Deutschland attraktiver
+                </div>
+                <div class="newsund-section2-card-content">
+                  Der Bundestag hat das „Medizinforschungsgesetz“ in 2./3.
+                  Lesung beschlossen. Damit werden die Rahmenbedingungen für die
+                  Entwicklung, Zulassung und Herstellung von Arzneimitteln und
+                  Medizinprodukten in Deutschland deutlich verbessert. „Das
+                  Gesetz wird zu besserer Forschung in der Medizin in
+                  Deutschland führen“, so der Minister.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 04.07.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Erster Schritt für einheitliche Personalbemessung im
+                  Krankenhaus
+                </div>
+                <div class="newsund-section2-card-content">
+                  Krankenhäuser sind ab dem vierten Quartal 2024 verpflichtet,
+                  Daten zum Pflegepersonalbedarf zu erheben. Die
+                  Datenübermittlung wird quartalsweise erfolgen, erstmals bis
+                  zum 31. Januar 2025. Das ist Gegenstand der
+                  Pflegepersonalbemessungsverordnung, die am 1. Juli 2024 in
+                  Kraft tritt. Mit dem Inkrafttreten wird der erste Schritt zur
+                  Einführung einer verbindlichen Pflegepersonalbemessung
+                  (PPR2.0) vollzogen.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 01.07.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Lauterbach: Wir schaffen bessere Bedingungen für Hausärzte
+                </div>
+                <div class="newsund-section2-card-content">
+                  Der Deutsche Bundestag hat am 28. Juni den Entwurf eines
+                  Gesundheitsversorgungsstärkungsgesetzes in 1. Lesung beraten.
+                  Der Hausarztberuf soll damit deutlich attraktiver werden und
+                  Patienten leichter Zugang zur Behandlung bekommen. „Dieses
+                  Gesetz wird die ambulante Versorgung entscheidend verbessern“,
+                  so der Minister in seiner Rede.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 28.06.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  „ePA für alle“ ermöglicht Medizin der Zukunft
+                </div>
+                <div class="newsund-section2-card-content">
+                  Mit der elektronischen Patientenakte für alle – kurz „ePA für
+                  alle“ – startet Deutschland Anfang 2025 eine Aufholjagd in der
+                  Digitalisierung des Gesundheitswesens. Das betonte
+                  Bundesgesundheitsminister Prof. Karl Lauterbach zum Start der
+                  Aufklärungskampagnen von Bundesregierung, Krankenkassen und
+                  gematik in Berlin: „Patientinnen und Patienten profitieren
+                  davon genauso wie Forschung und Ärzteschaft. Digitalisierung
+                  macht Medizin besser, ermöglicht individuelle Therapie und
+                  verhindert unerwünschte Nebenwirkungen.“
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 25.06.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Wiederaufbau Ukraine - Lauterbach: "Es sind Perspektiven, die
+                  dieses starke Land braucht"
+                </div>
+                <div class="newsund-section2-card-content">
+                  Rund 100 Mio. Euro für Projekte zur Stärkung der mentalen
+                  Gesundheit und Telemedizin: Die Bundesregierung hat im Rahmen
+                  der Ukraine Recovery Conference 2024 (11./12. Juni) in Berlin
+                  neue finanzielle Zusagen für den Wiederaufbau des ukrainischen
+                  Gesundheitswesens infolge des russischen Angriffskriegs
+                  gemacht. Bundesgesundheitsminister Prof. Karl Lauterbach
+                  tauscht sich dazu auf der Konferenz mit seinem Amtskollegen
+                  Viktor Liashko und der ukrainischen First Lady Olena Zelenska
+                  aus.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 11.06.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Lauterbach: Das Medizinforschungsgesetz wird langfristig eine
+                  große Bedeutung für Deutschland haben
+                </div>
+                <div class="newsund-section2-card-content">
+                  Der Deutsche Bundestag hat am 6. Mai das
+                  Medizinforschungsgesetz in erster Lesung beraten. „Wir wollen
+                  Deutschland als Standort für Forschung zu Arzneimitteln,
+                  Medizinprodukten, Digitalisierung und KI in der Medizin stark
+                  ausbauen und nach vorne bringen“, so Bundesgesundheitsminister
+                  Prof. Karl Lauterbach in seiner Rede.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 06.06.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Lauterbach: Müssen uns an Klimawandel anpassen und
+                  gleichzeitig bekämpfen
+                </div>
+                <div class="newsund-section2-card-content">
+                  Auf der 2. Hitzeschutzkonferenz hat Bundesgesundheitsminister
+                  Prof. Karl Lauterbach gemeinsam mit Expertinnen und Experten
+                  aus allen Bereichen des Gesundheitswesens Bundesempfehlungen
+                  für den Hitzeschutz in Pflegeeinrichtungen und Krankenhäusern
+                  vorgelegt. „Der Klimawandel wird Hitzeschutz zu einem
+                  Dauerproblem machen. Darauf muss Deutschland systematisch
+                  vorbereitet werden.", so der Minister.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 24.05.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Bundeskabinett beschließt Versorgungsstärkungsgesetz:
+                  Hausarztberuf wird gestärkt, Versorgung verbessert
+                </div>
+                <div class="newsund-section2-card-content">
+                  Durch das GVSG soll der Hausarztberuf deutlich attraktiver,
+                  die ambulante regionale Versorgung gestärkt, die hausärztliche
+                  und die ambulante psychotherapeutische Versorgung
+                  weiterentwickelt, der Leistungszugang verbessert und die
+                  Transparenz erhöht werden. „Wir streichen die bürokratischen
+                  Quartalspauschalen. Arzttermine zu bekommen wird einfacher,
+                  unnötige Arztbesuche fallen weg“, so der
+                  Bundesgesundheitsminister.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 22.05.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Lauterbach: Transparenz ist Teil unserer Qualitätsoffensive
+                </div>
+                <div class="newsund-section2-card-content">
+                  Das BMG hat den interaktiven Bundes-Klinik-Atlas auf
+                  www.bundes-klinik-atlas.de veröffentlicht mit dem Bürgerinnen
+                  und Bürger schnell und verständlich erfahren, welche Klinik
+                  welche Leistung mit welcher Qualität anbietet. „Damit bieten
+                  wir Patientinnen und Patienten einen übersichtlichen Wegweiser
+                  durch den Krankenhaus-Dschungel in Deutschland“, so der
+                  Minister.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 17.05.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Das Grundgesetz feiert seinen 75. Geburtstag
+                </div>
+                <div class="newsund-section2-card-content">
+                  Am 23. Mai 2024 feiert das Grundgesetz, das Fundament unserer
+                  Demokratie und unseres Zusammenlebens, seinen 75. Geburtstag.
+                  Dieses Jubiläum wollen wir als Bundesregierung gemeinsam mit
+                  Ihnen feiern.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 16.05.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Lauterbach: Wir gewährleisten eine gute stationäre Behandlung
+                  für alle
+                </div>
+                <div class="newsund-section2-card-content">
+                  Bessere Behandlungsqualität, weniger Bürokratie sowie der
+                  Erhalt eines lückenlosen Netzes von Krankenhäusern in ganz
+                  Deutschland – das sind die Ziele des
+                  Krankenhausversorgungsverbesserungsgesetzes (KHVVG), das heute
+                  vom Bundeskabinett beschlossen wurde. „Mit der Reform können
+                  wir in einer alternden Gesellschaft gute stationäre Behandlung
+                  für alle gewährleisten“, so der Minister.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 15.05.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Lauterbach: „Ein ineffizientes System können wir uns nicht
+                  mehr leisten.“
+                </div>
+                <div class="newsund-section2-card-content">
+                  Regierungskommission legt Reformvorschläge für bessere
+                  Zusammenarbeit im Gesundheitssystem vor
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 03.05.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Nationale Suizidpräventionsstrategie - Lauterbach: „Das
+                  gesellschaftliche Tabu von Tod und Suizid überwinden“
+                </div>
+                <div class="newsund-section2-card-content">
+                  Eine bundesweite Koordinierungsstelle für Beratungs- und
+                  Kooperationsangebote, besondere Schulungen für Fachkräfte in
+                  Gesundheitswesen und Pflege sowie die Entwicklung eines
+                  Konzepts für eine zentrale deutschlandweite
+                  Krisendienst-Notrufnummer: das sind die zentralen Empfehlungen
+                  zur Umsetzung der Nationalen Suizidpräventionsstrategie, die
+                  Bundesgesundheitsminister Prof. Karl Lauterbach vorgestellt
+                  hat.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 02.05.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Lauterbach: Rückenwind für unsere Reformen
+                </div>
+                <div class="newsund-section2-card-content">
+                  Nicht einfach nur mehr Fachkräfte gewinnen, sondern das
+                  Gesundheitswesen so umstrukturieren , dass medizinisches
+                  Personal nachhaltiger eingesetzt wird - diese Empfehlung gibt
+                  der Sachverständigenrat Gesundheit & Pflege im neuen Gutachten
+                  „Fachkräfte im Gesundheitswesen. Nachhaltiger Einsatz einer
+                  knappen Ressource“.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 25.04.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Lauterbach: „Wendepunkt in der Long COVID Versorgung: Wir
+                  lassen Betroffene nicht allein“
+                </div>
+                <div class="newsund-section2-card-content">
+                  Millionen für Forschungsprojekte und Versorgung
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 16.04.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Kommission zur reproduktiven Selbstbestimmung und
+                  Fortpflanzungsmedizin legt Abschlussbericht vor
+                </div>
+                <div class="newsund-section2-card-content">
+                  „Die Kommission hat hervorragende Arbeit geleistet. Ihre
+                  wissenschaftliche Expertise ist eine wesentliche Hilfe, um die
+                  komplexen ethischen Fragen zur reproduktiven Selbstbestimmung
+                  und Fortpflanzungsmedizin zu beantworten“, so
+                  Bundesgesundheitsminister Prof. Lauterbach. In ihrem Bericht
+                  hält die Kommission u. a. die Legalisierung von Eizellspenden
+                  und rechtmäßige Schwangerschaftsabbrüche in der Frühphase für
+                  möglich.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 15.04.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Lauterbach: „Der Bund wird nicht wackeln“
+                </div>
+                <div class="newsund-section2-card-content"></div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 11.04.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="newsund-section2-card">
+                <div class="newsund-section2-card-heading">
+                  Bundesregierung beschließt Medizinforschungsgesetz
+                </div>
+                <div class="newsund-section2-card-content">
+                  Das Kabinett hat am 27.03.2024 den Entwurf eines
+                  Medizinforschungsgesetzes beschlossen. Damit werden
+                  Genehmigungsverfahren für klinische Prüfungen sowie
+                  Zulassungsverfahren von Arzneimitteln, Medizinprodukten
+                  beschleunigt und entbürokratisiert, bei gleichzeitiger Wahrung
+                  der hohen Standards für die Sicherheit von Patienten. „Das
+                  gibt Forschenden und Unternehmen Planungssicherheit. Es stärkt
+                  den Forschungsstandort und fördert Wachstum und
+                  Beschäftigung,“ so Bundesgesundheitsminister Prof. Karl
+                  Lauterbach.
+                </div>
+                <div class="newsund-section2-card-bottom">
+                  <div class="newsund-section2-card-date">
+                    Datum: 27.03.2024 <br />
+                    Quelle:
+                    <a
+                      href="https://bundesgesundheitsministerium.de"
+                      target="_blank"
+                      >www.aerztezeitung.de</a
+                    >
+                  </div>
+                  <div>
+                    <button>
+                      <a
+                        href="https://www.bundesgesundheitsministerium.de/presse/reden/rede/gvsg-bt-1-lesung.html"
+                        target="_blank"
+                      ></a
+                      >Weiterlesen
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="width: 100%">
+      <img
+        class="page-bottom-img"
+        style="width: 100%; object-fit: cover; height: 100%"
+        src="./Images/Newundrateger_bottom.svg"
+        alt=""
+      />
+    </div>
+    <!-- ######################### FOOTER SECTION ######################### -->
+
+    <div class="footer-container">
+      <div class="footer-left-shape"></div>
+      <div class="footer-right-shape"></div>
+
+      <div class="row footer-main-row">
+        <div class="col-lg-4 footer-left">
+          <img src="./Images/pflegepur_logo.svg" alt="" />
+          <div class="footer-contact-div">
+            <div class="contact-div">
+              <img src="./Images/footer_email_icon.svg" alt="" />
+              <div class="contact-phone">E-Mail <br />kontakt@pflegepur.de</div>
+            </div>
+            <div class="contact-div">
+              <img src="./Images/footer_call_icon.svg" alt="" />
+              <div class="contact-time">Telefon <br />05151–7909862</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 footer-right">
+          <div class="row">
+            <div class="col-lg-3 col-6">
+              <span class="footer-items-heading">Seiten</span>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ueberuns.html">Über uns</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="newsundratgeber.html">News und Ratgeber</a></li>
+                <li><a href="marktplatz.html">Marktplatz</a></li>
+                <li><a href="buecher.html">Bücher</a></li>
+                <li><a href="academy.html">Academy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-6">
+              <span class="footer-items-heading">Services</span>
+              <ul>
+                <li><a href="checklisten.html">Checklisten </a></li>
+                <li>
+                  <a href="online_rechner.html">Online-Rechner</a>
+                </li>
+                <li><a href="musteranschreiben.html">Musteranschreiben</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <span
+                style="display: block; margin-bottom: 4rem"
+                class="footer-items-heading"
+                >Newsletter</span
+              >
+              <button class="footer-btn" style="position: relative">
+                <a
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                  "
+                  href="https://pflegepur.de/newsletter.php"
+                  target="_blank"
+                ></a>
+                Abonnieren Sie unseren Newsletter!
+              </button>
+              <div class="footer-icons-div">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100079595010397"
+                  target="_blank"
+                  ><img src="./Images/footer_fb_icon.svg" alt=""
+                /></a>
+                <a href="https://twitter.com/Pflege_Pur" target="_blank"
+                  ><img src="./Images/footer_x_icon.svg" alt=""
+                /></a>
+                <a
+                  href="https://open.spotify.com/show/6JACh2eflNeIcxU8U2ltyL"
+                  target="_blank"
+                  ><img src="./Images/footer_spotify_icon.svg" alt=""
+                /></a>
+                <a href="https://www.youtube.com/@PflegePur" target="_blank"
+                  ><img src="./Images/footer_utube_icon.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-flex">
+          <div class="footer-copyright" style="flex: 2">
+            Copyright © PflegePur
+          </div>
+          <div style="text-align: right" class="footer-bottom-flex-inner">
+            <a href="./impressum.html" class="footer-impressum"
+              >Impressum und Datenschutzerklärung</a
+            >
+            <a
+              target="_blank"
+              href="https://61cac9fd.sibforms.com/serve/MUIFAGHCIVlNnpFo6oZ8Bxe81qPMrQsIHzE3gZBM3cN41OqxlCOPZgqD00GPoBXSOr5OUmg4_xleR7Qsgn1T1UNQQH1le1Ws3QaZ_KhUrVPJBqD_yR_IykEsyz19cbQVNPHUiLc-avpokGlRq28zKceSlVbepTWnhMS4b3MKFh-UjB_67WhHhruMNmQj6DaFQTBAuCOEBppJpfM-"
+              class="footer-newsletter"
+            >
+              Newsletter-Abmeldung</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ######################## END ############################ -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

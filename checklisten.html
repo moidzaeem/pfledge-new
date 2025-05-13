@@ -1,0 +1,1706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>pFlegepur</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="./Images/favicon.png" />
+
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div
+      class="header-container service-header-bg"
+      style="
+        background-image: url('./Images/Checklisten_header_bg.svg') !important;
+      "
+    >
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid navbar-container justify-content-between">
+          <a href="./index.html"
+            ><img src="./Images/pflegepur_logo.svg" alt="PflegePur Logo"
+          /></a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a href="./services.html" class="nav-link">Service</a>
+                <ul class="dropdown-menu" style="background-color: #000000">
+                  <li
+                    style="
+                      margin-top: 0.35rem;
+                      margin-bottom: 0.7rem;
+                      border-bottom: 1px solid #ffffffbd;
+                      padding-bottom: 0.8rem;
+                    "
+                  >
+                    <a
+                      style="border: none; text-decoration: none"
+                      href="checklisten.html"
+                      >Checklisten</a
+                    >
+                  </li>
+                  <li
+                    style="
+                      margin-bottom: 0.7rem;
+                      border-bottom: 1px solid #ffffffbd;
+                      padding-bottom: 0.8rem;
+                    "
+                  >
+                    <a
+                      style="border: none; text-decoration: none"
+                      href="online_rechner.html"
+                      >Online-Rechner</a
+                    >
+                  </li>
+                  <li style="margin-bottom: 0.5rem">
+                    <a
+                      style="border: none; text-decoration: none"
+                      href="musteranschreiben.html"
+                      >Musteranschreiben</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="blog.html"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="newsundratgeber.html"
+                  >News und Ratgeber</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="marktplatz.html"
+                  >Marktplatz</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="buecher.html"
+                  >Bücher</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  style="border: none"
+                  aria-current="page"
+                  href="academy.html"
+                  >Academy</a
+                >
+              </li>
+              <li class="nav-item nav-btn">
+                <button class="nav-link" aria-current="page" style="position: relative;">
+                  <a
+                    href="./partner.html"
+                    style="
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      height: 100%;
+                      border-radius: 10px;
+                      width: 100%;
+                    "
+                  ></a>
+                  Partner werden!
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="service-header-content">
+        <span>Effiziente Unterstützung im Pflegealltag</span>
+        <div>Checklisten</div>
+      </div>
+    </div>
+
+    <!-- ######################## CHECKLISTEN PAGE SECTION 1 ######################## -->
+    <div class="checklisten-section1">
+      <div>
+        Willkommen bei unseren umfassenden Checklisten für Pflegebedürftige und
+        pflegende Angehörige. In der Pflege zählt jeder Handgriff, und eine gut
+        organisierte Planung erleichtert den Alltag erheblich. Unsere
+        Checklisten bieten Ihnen strukturierte und leicht umsetzbare Anleitungen
+        für alle wichtigen Pflegethemen – von der täglichen Pflegeplanung bis
+        hin zur Organisation von Arztbesuchen. Nutzen Sie unsere Checklisten, um
+        den Pflegealltag zu optimieren und die bestmögliche Betreuung zu
+        gewährleisten.
+      </div>
+    </div>
+
+    <!-- ######################## CHECKLISTEN PAGE SECTION 2 ########################   -->
+
+    <div class="checklisten-section2-top-btn-container">
+      <button
+        class="checklisten-section2-top-btn1 checklisten-top-btn active-btn"
+        id="checklisten-top-btn1"
+      >
+        <a href="./checklisten.html"></a>
+        MEDIKAMENTENMANAGEMENT
+      </button>
+      <button
+        class="checklisten-section2-top-btn2 checklisten-top-btn"
+        id="checklisten-top-btn2"
+      >
+        <a
+          href="./CheckListenCategories/terminplanung_und_arztbesuche.html"
+        ></a>
+        TERMINPLANUNG UND ARZTBESUCHE
+      </button>
+      <button
+        class="checklisten-section2-top-btn3 checklisten-top-btn"
+        id="checklisten-top-btn3"
+      >
+        <a
+          href="./CheckListenCategories/hausliche_pflege_und_unterstutzung.html"
+        ></a>
+        HÄUSLICHE PFLEGE UND UNTERSTÜTZUNG
+      </button>
+      <button
+        class="checklisten-section2-top-btn4 checklisten-top-btn"
+        id="checklisten-top-btn4"
+      >
+        <a
+          href="./CheckListenCategories/psychische_und_soziale_unterstutzung.html"
+        ></a>
+        PSYCHISCHE UND SOZIALE UNTERSTÜTZUNG
+      </button>
+      <button
+        class="checklisten-section2-top-btn5 checklisten-top-btn"
+        id="checklisten-top-btn5"
+      >
+        <a
+          href="./CheckListenCategories/finanzille_und_rechtliche_angelegenheiten.html"
+        ></a>
+        FINANZIELLE UND RECHTLICHE ANGELEGENHEITEN
+      </button>
+      <button
+        class="checklisten-section2-top-btn6 checklisten-top-btn"
+        id="checklisten-top-btn6"
+      >
+        <a href="./CheckListenCategories/notfallvorbereitung.html"></a>
+        NOTFALLVORBEREITUNG
+      </button>
+      <button
+        class="checklisten-section2-top-btn7 checklisten-top-btn"
+        id="checklisten-top-btn7"
+      >
+        <a href="./CheckListenCategories/gesundheitsuberwachung.html"></a>
+        GESUNDHEITSÜBERWACHUNG
+      </button>
+    </div>
+
+    <div
+      class="checklisten-section2-bottom-btn-container"
+      id="checklisten-bottom-container1"
+    >
+      <button
+        class="checklisten-section2-bottom-btn11 check-bottom-btns check-active-btn"
+        id="checklisten-bottom-btn11"
+      >
+        Medikamentenliste und Dosierungen
+      </button>
+      <button
+        class="checklisten-section2-bottom-btn12 check-bottom-btns"
+        id="checklisten-bottom-btn12"
+      >
+        Medikamentenaufbewahrung
+      </button>
+      <button
+        class="checklisten-section2-bottom-btn13 check-bottom-btns"
+        id="checklisten-bottom-btn13"
+      >
+        Einnahmezeiten und -methoden
+      </button>
+      <button
+        class="checklisten-section2-bottom-btn14 check-bottom-btns"
+        id="checklisten-bottom-btn14"
+      >
+        Verschreibungserneuerungen und Apothekenkontakte
+      </button>
+    </div>
+
+    <!-- ######################## CHECKLISTEN PAGE SECTION 3 ########################   -->
+
+    <!-- #################### Medikamentenliste und Dosierungen form ###################   -->
+
+    <form action="" class="check-listen-forms" id="medi-form1">
+      <div class="checklisten-section3-container">
+        <div class="checklisten-section3-top1">
+          Checkliste Medikamentenliste und Dosierungen
+        </div>
+
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              1. Erstellung und Pflege der Medikamentenliste
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Alle aktuellen Medikamente auflisten, inklusive:
+                <ul class="mt-3">
+                  <li>Name des Medikaments</li>
+                  <li>Dosierung (Menge und Häufigkeit)</li>
+                  <li>Einnahmezeitpunkte (z.B. morgens, mittags, abends)</li>
+                  <li>Zweck/Grund der Einnahme</li>
+                </ul>
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Verschreibende Ärzte für jedes Medikament notieren
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Apotheke und Kontaktinformationen notieren
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Regelmäßig aktualisieren und Änderungen dokumentieren
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              2. Organisation der Medikamente
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Medikamente in der Originalverpackung aufbewahren
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Verwendung eines wöchentlichen Pillenorganizers erwägen
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Lagerungshinweise beachten (z.B. Temperatur, Lichtschutz)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              3. Einnahme und Verwaltung
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Erinnerungen für die Einnahme der Medikamente einrichten
+                (Wecker, Apps)
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Überprüfen, ob die Medikamente vor oder nach dem Essen
+                eingenommen werden müssen
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Sicherstellen, dass genügend Wasser zur Einnahme zur Verfügung
+                steht
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Dokumentation der Einnahme (z.B. in einem Medikamententagebuch)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              4. Besondere Anweisungen und Vorsichtsmaßnahmen
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Nebenwirkungen und mögliche Wechselwirkungen notieren
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Überprüfen, ob bestimmte Lebensmittel oder Aktivitäten vermieden
+                werden müssen
+              </div>
+            </div>
+
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Hinweise zur Einnahme (z.B. nicht zerkauen, nicht zerbrechen)
+                beachten
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Allergien oder Unverträglichkeiten dokumentieren
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              5. Notfälle und Vergessene Dosen
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Plan für vergessene Dosen erstellen (z.B. sofort nachholen oder
+                überspringen?)
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Notfallkontakte und -informationen bereithalten
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Anzeichen einer Überdosierung kennen und Notfallmaßnahmen planen
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              6. Kommunikation und Rücksprache mit Ärzten
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Regelmäßige Arzttermine zur Überprüfung der Medikation
+                vereinbaren
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Fragen oder Bedenken bezüglich der Medikation mit dem Arzt
+                besprechen
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Über neue Symptome oder Nebenwirkungen informieren
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              7. Dokumentation und Aufbewahrung
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Kopien der Medikamentenliste an zentralen Orten aufbewahren
+                (z.B. Kühlschrank, Pflegemappe)
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Notfallkarte mit wichtigen Medikamenteninformationen mitführen
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Regelmäßige Überprüfung und Aktualisierung der Dokumentation
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="checklisten-section3-bottom">
+          Diese Checkliste hilft dabei, die Medikamenteneinnahme sicher und
+          organisiert zu gestalten, um die Gesundheit und das Wohlbefinden des
+          Pflegebedürftigen zu gewährleisten.
+        </div>
+
+        <div class="checklisten-section3-btn"><button>Drucken</button></div>
+      </div>
+    </form>
+
+    <!-- #################### Medikamentenaufbewahrung form ###################   -->
+
+    <form action="" class="check-listen-forms" id="medi-form2">
+      <div class="checklisten-section3-container">
+        <div class="checklisten-section3-top1" style="word-break: break-all">
+          Checkliste Medikamentenaufbewahrung
+        </div>
+
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              1. Allgemeine Aufbewahrung
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Medikamente in der Originalverpackung aufbewahren
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Lagerungshinweise auf dem Etikett beachten (z.B. Kühl, trocken,
+                lichtgeschützt)
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Medikamente außer Reichweite von Kindern und Haustieren
+                aufbewahren
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              2. Spezifische Lagerungsanforderungen
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Temperaturanforderungen überprüfen:
+                <ul class="mt-3">
+                  <li>Raumtemperatur (15-25°C)</li>
+                  <li>Kühlschranktemperatur (2-8°C)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Anweisungen zu Lichtschutz beachten (Medikamente in dunklen
+                Behältern oder Schränken aufbewahren)
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Verwendung eines wöchentlichen Pillenorganizers erwägen
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Feuchtigkeitsschutz gewährleisten (Medikamente nicht im
+                Badezimmer aufbewahren)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              3. Organisation und Übersichtlichkeit
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Medikamente in einem speziellen Schrank oder einer Schublade
+                aufbewahren
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Ähnliche Medikamente zusammen lagern (z.B. nach
+                Einnahmezeitpunkt oder Zweck sortieren)
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Verfallsdaten regelmäßig überprüfen und abgelaufene Medikamente
+                entsorgen
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Medikamentenliste und Dosierungsanweisungen an einem sichtbaren
+                Ort aufbewahren
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              4. Sicherheit und Notfallvorsorge
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Medikamente in abschließbaren Schränken oder Boxen aufbewahren,
+                wenn Kinder oder unbefugte Personen im Haushalt sind
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Notfallmedikamente separat und leicht zugänglich lagern
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Telefonnummern für Giftnotrufzentralen griffbereit halten
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              5. Reise und Transport
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Medikamente in einer speziellen Reisetasche oder Box
+                transportieren
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Bei Flugreisen Medikamente im Handgepäck mitführen
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Für Reisen in heiße oder kalte Klimazonen geeignete
+                Aufbewahrungsmöglichkeiten nutzen (z.B. Kühlpacks,
+                Thermotaschen)
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Verschreibungen oder ärztliche Bescheinigungen mitführen,
+                insbesondere bei internationalen Reisen
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              6. Spezieller Umgang mit bestimmten Medikamenten
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Hinweise zur Lagerung von Flüssigmedikamenten und Suspensionen
+                beachten
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Besondere Vorsicht bei der Aufbewahrung von Betäubungsmitteln
+                und kontrollierten Substanzen walten lassen
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Inhalationsgeräte, Insulinpens und andere spezielle
+                Applikationsformen sachgerecht aufbewahren und reinigen
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              7. Entsorgung von Medikamenten
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Abgelaufene oder nicht mehr benötigte Medikamente sachgerecht
+                entsorgen
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Rückgabemöglichkeiten bei Apotheken nutzen
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Medikamente nicht über den Hausmüll oder die Toilette entsorgen
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="checklisten-section3-bottom">
+          Diese Checkliste sorgt für eine sichere und ordnungsgemäße
+          Aufbewahrung von Medikamenten, um die Wirksamkeit zu erhalten und
+          gesundheitliche Risiken zu minimieren.
+        </div>
+
+        <div class="checklisten-section3-btn"><button>Drucken</button></div>
+      </div>
+    </form>
+
+    <!-- #################### Einnahmezeiten und methoden form ###################   -->
+
+    <form action="" class="check-listen-forms" id="medi-form3">
+      <div class="checklisten-section3-container">
+        <div class="checklisten-section3-top1">
+          Checkliste Einnahmezeit und -methoden
+        </div>
+
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              1. Erstellung eines Einnahmeplans
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Medikamentenliste mit Einnahmezeiten erstellen
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Unterschiedliche Medikamente und ihre jeweiligen Einnahmezeiten
+                notieren (morgens, mittags, abends, vor dem Schlafengehen)
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Einnahmehäufigkeit für jedes Medikament festlegen (täglich,
+                wöchentlich, monatlich)
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Plan an einem gut sichtbaren Ort aufbewahren (z.B. Kühlschrank,
+                Medikamentenschrank)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              2. Methoden zur Einnahmeerinnerung
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Wecker oder Alarme auf dem Handy oder einer Uhr einstellen
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Verwendung von Medikamenten-Apps oder digitalen Pillenboxen zur
+                Erinnerung
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Angehörige oder Pflegekräfte in den Einnahmeplan einbeziehen
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Visuelle Hilfsmittel wie Kalender oder Checklisten verwenden
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              3. Einnahmearten und -techniken
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Tabletten/Kapseln:
+                <div class="checklisten-checkbox-container mt-3 ms-1">
+                  <label>
+                    <input type="checkbox" />
+                    <span class="custom-checkbox"></span>
+                  </label>
+                  <div class="checklisten-checkbox-data">
+                    Mit ausreichend Wasser einnehmen
+                  </div>
+                </div>
+                <div class="checklisten-checkbox-container mt-2 ms-1">
+                  <label>
+                    <input type="checkbox" />
+                    <span class="custom-checkbox"></span>
+                  </label>
+                  <div class="checklisten-checkbox-data">
+                    Hinweise beachten, ob sie gekaut, geschluckt oder aufgelöst
+                    werden müssen
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Flüssigmedikamente:
+                <div class="checklisten-checkbox-container mt-3 ms-1">
+                  <label>
+                    <input type="checkbox" />
+                    <span class="custom-checkbox"></span>
+                  </label>
+                  <div class="checklisten-checkbox-data">
+                    Mit beiliegendem Messbecher oder Löffel dosieren
+                  </div>
+                </div>
+                <div class="checklisten-checkbox-container mt-2 ms-1">
+                  <label>
+                    <input type="checkbox" />
+                    <span class="custom-checkbox"></span>
+                  </label>
+                  <div class="checklisten-checkbox-data">
+                    Vor Gebrauch schütteln, falls erforderlich
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Inhalatoren:
+                <div class="checklisten-checkbox-container mt-3 ms-1">
+                  <label>
+                    <input type="checkbox" />
+                    <span class="custom-checkbox"></span>
+                  </label>
+                  <div class="checklisten-checkbox-data">
+                    Richtige Inhalationstechnik anwenden (z.B. Tief einatmen,
+                    Gerät auslösen, Atem anhalten)
+                  </div>
+                </div>
+                <div class="checklisten-checkbox-container mt-2 ms-1">
+                  <label>
+                    <input type="checkbox" />
+                    <span class="custom-checkbox"></span>
+                  </label>
+                  <div class="checklisten-checkbox-data">
+                    Regelmäßig reinigen und kontrollieren
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Pflaster:
+                <div class="checklisten-checkbox-container mt-3 ms-1">
+                  <label>
+                    <input type="checkbox" />
+                    <span class="custom-checkbox"></span>
+                  </label>
+                  <div class="checklisten-checkbox-data">
+                    Auf saubere, trockene Haut aufkleben
+                  </div>
+                </div>
+                <div class="checklisten-checkbox-container mt-2 ms-1">
+                  <label>
+                    <input type="checkbox" />
+                    <span class="custom-checkbox"></span>
+                  </label>
+                  <div class="checklisten-checkbox-data">
+                    Stelle regelmäßig wechseln, um Hautreizungen zu vermeiden
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              4. Einnahmezeiten und Essgewohnheiten
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Medikamente, die vor, während oder nach dem Essen eingenommen
+                werden müssen, kennzeichnen
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Ernährungshinweise beachten (z.B. keine Milchprodukte, Alkohol
+                vermeiden)
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Kompatibilität mit Mahlzeiten planen (z.B. morgens nach dem
+                Frühstück)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              5. Besondere Anweisungen und Vorsichtsmaßnahmen
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Anweisungen des Arztes oder Apothekers genau befolgen
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Hinweise auf Nebenwirkungen und Wechselwirkungen mit anderen
+                Medikamenten beachten
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Regelmäßig Überprüfen, ob es Änderungen in der Medikation gibt
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              6. Dokumentation der Einnahme
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Einnahme in einem Medikamententagebuch festhalten
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Datum, Uhrzeit und eventuelle Bemerkungen notieren
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Bei vergessenen Dosen den Arzt kontaktieren und Anweisungen
+                befolgen
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              7. Kommunikation und Rücksprache
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Fragen oder Unsicherheiten bezüglich der Einnahmezeiten oder
+                -methoden mit dem Arzt oder Apotheker klären
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Änderungen oder neue Symptome sofort melden
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Regelmäßige Überprüfung und Anpassung des Einnahmeplans in
+                Absprache mit dem Arzt
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="checklisten-section3-bottom">
+          Diese Checkliste hilft dabei, die Medikamenteneinnahme strukturiert
+          und sicher zu gestalten, um die Wirksamkeit der Therapie zu
+          gewährleisten und gesundheitliche Risiken zu minimieren.
+        </div>
+
+        <div class="checklisten-section3-btn"><button>Drucken</button></div>
+      </div>
+    </form>
+    <!-- ####################  Verschreibungserneuerungen und Apothekenkontakte form ###################   -->
+
+    <form action="" class="check-listen-forms" id="medi-form4">
+      <div class="checklisten-section3-container">
+        <div class="checklisten-section3-top1">
+          Checkliste Verschreibungserneuerung und Apothekenkontakte
+        </div>
+
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              1. Überblick über Verschreibungen
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Liste aller aktuellen Verschreibungen erstellen
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Verschreibungsdetails notieren (Name des Medikaments, Dosierung,
+                Häufigkeit)
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Verschreibungsdatum und Ablaufdatum festhalten
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Name und Kontaktinformationen des verschreibenden Arztes
+                notieren
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              2. Verschreibungserneuerungen
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Erinnerung für die Erneuerung von Verschreibungen einrichten
+                (Kalender, App)
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Benötigte Dokumente und Informationen für die Erneuerung
+                vorbereiten
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Verschreibung rechtzeitig beim Arzt oder online erneuern
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Prüfung auf mögliche Veränderungen in der Dosierung oder
+                Medikation durch den Arzt
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              3. Apothekenkontakte
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Liste der bevorzugten Apotheken mit Kontaktinformationen
+                erstellen
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Öffnungszeiten und spezielle Dienstleistungen der Apotheken
+                notieren
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Online-Apotheken und deren Lieferzeiten sowie Versandkosten
+                überprüfen
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Notfallkontakte für 24-Stunden-Apotheken bereithalten
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              4. Kommunikation mit Apotheken
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Regelmäßige Überprüfung und Aktualisierung der
+                Medikamentenvorräte
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Mit der Apotheke über mögliche Generika oder alternative
+                Medikamente sprechen
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Apotheker über alle eingenommenen Medikamente informieren, um
+                Wechselwirkungen zu vermeiden
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Fragen zur Einnahme, Lagerung und Nebenwirkungen der Medikamente
+                mit dem Apotheker klären
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              5. Abholung und Lieferung
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Medikamentenabholung planen oder eine Vertrauensperson dafür
+                bestimmen
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Nutzung von Lieferdiensten für Medikamente prüfen
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Sicherstellen, dass jemand zu Hause ist, um die Lieferung
+                entgegenzunehmen
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              6. Dokumentation und Verwaltung
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Kopien aller Verschreibungen und Bestellbestätigungen
+                aufbewahren
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Einnahmeplan und Medikamentenliste regelmäßig aktualisieren
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Verfallsdaten der Medikamente überprüfen und abgelaufene
+                Medikamente sicher entsorgen
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              7. Versicherungs- und Zahlungsangelegenheiten
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Überprüfung der Versicherungsdeckung für Medikamente
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Klärung der Zahlungsmodalitäten mit der Apotheke (Barzahlung,
+                Kreditkarte, Rechnung)
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Belege und Rechnungen für Rückerstattungen oder Steuerzwecke
+                aufbewahren
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checklisten-section3-sub-container">
+          <div class="checklisten-section3-wrapper">
+            <div class="checklisten-section3-wrapper-heading">
+              8. Notfallvorsorge
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Notfallvorrat an wichtigen Medikamenten sicherstellen
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Liste von Notfallapotheken und deren Kontaktdaten bereithalten
+              </div>
+            </div>
+            <div class="checklisten-checkbox-container">
+              <label>
+                <input type="checkbox" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <div class="checklisten-checkbox-data">
+                Regelmäßige Überprüfung und Auffüllung des Notfallvorrats
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checklisten-section3-bottom">
+          Diese Checkliste hilft dabei, den Prozess der
+          Verschreibungserneuerungen und den Kontakt zu Apotheken strukturiert
+          und effizient zu gestalten, um die kontinuierliche Versorgung mit
+          notwendigen Medikamenten sicherzustellen.
+        </div>
+
+        <div class="checklisten-section3-btn"><button>Drucken</button></div>
+      </div>
+    </form>
+
+    <div style="width: 100%">
+      <img
+        class="page-bottom-img"
+        style="width: 100%; object-fit: cover; height: 100%"
+        src="./Images/Checklisten_bottom_img.svg"
+        alt=""
+      />
+    </div>
+
+    <!-- ######################### FOOTER SECTION ######################### -->
+
+    <div class="footer-container">
+      <div class="footer-left-shape"></div>
+      <div class="footer-right-shape"></div>
+
+      <div class="row footer-main-row">
+        <div class="col-lg-4 footer-left">
+          <img src="./Images/pflegepur_logo.svg" alt="" />
+          <div class="footer-contact-div">
+            <div class="contact-div">
+              <img src="./Images/footer_email_icon.svg" alt="" />
+              <div class="contact-phone">E-Mail <br />kontakt@pflegepur.de</div>
+            </div>
+            <div class="contact-div">
+              <img src="./Images/footer_call_icon.svg" alt="" />
+              <div class="contact-time">Telefon <br />05151–7909862</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 footer-right">
+          <div class="row">
+            <div class="col-lg-3 col-6">
+              <span class="footer-items-heading">Seiten</span>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ueberuns.html">Über uns</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="newsundratgeber.html">News und Ratgeber</a></li>
+                <li><a href="marktplatz.html">Marktplatz</a></li>
+                <li><a href="buecher.html">Bücher</a></li>
+                <li><a href="academy.html">Academy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-6">
+              <span class="footer-items-heading">Services</span>
+              <ul>
+                <li><a href="checklisten.html">Checklisten</a></li>
+                <li></li>
+                <li>
+                  <a href="online_rechner.html">Online-Rechner</a>
+                </li>
+                <li><a href="musteranschreiben.html">Musteranschreiben</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <span
+                style="display: block; margin-bottom: 4rem"
+                class="footer-items-heading"
+                >Newsletter</span
+              >
+              <button class="footer-btn" style="position: relative">
+                <a
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                  "
+                  href="https://pflegepur.de/newsletter.php"
+                  target="_blank"
+                ></a>
+                Abonnieren Sie unseren Newsletter!
+              </button>
+              <div class="footer-icons-div">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100079595010397"
+                  target="_blank"
+                  ><img src="./Images/footer_fb_icon.svg" alt=""
+                /></a>
+                <a href="https://twitter.com/Pflege_Pur" target="_blank"
+                  ><img src="./Images/footer_x_icon.svg" alt=""
+                /></a>
+                <a
+                  href="https://open.spotify.com/show/6JACh2eflNeIcxU8U2ltyL"
+                  target="_blank"
+                  ><img src="./Images/footer_spotify_icon.svg" alt=""
+                /></a>
+                <a href="https://www.youtube.com/@PflegePur" target="_blank"
+                  ><img src="./Images/footer_utube_icon.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-flex">
+          <div class="footer-copyright" style="flex: 2">
+            Copyright © PflegePur
+          </div>
+          <div style="text-align: right" class="footer-bottom-flex-inner">
+            <a href="./impressum.html" class="footer-impressum"
+              >Impressum und Datenschutzerklärung</a
+            >
+            <a
+              target="_blank"
+              href="https://61cac9fd.sibforms.com/serve/MUIFAGHCIVlNnpFo6oZ8Bxe81qPMrQsIHzE3gZBM3cN41OqxlCOPZgqD00GPoBXSOr5OUmg4_xleR7Qsgn1T1UNQQH1le1Ws3QaZ_KhUrVPJBqD_yR_IykEsyz19cbQVNPHUiLc-avpokGlRq28zKceSlVbepTWnhMS4b3MKFh-UjB_67WhHhruMNmQj6DaFQTBAuCOEBppJpfM-"
+              class="footer-newsletter"
+            >
+              Newsletter-Abmeldung</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ######################## END ############################ -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

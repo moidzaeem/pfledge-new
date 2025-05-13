@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>pFlegepur</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="./Images/favicon.png" />
+
+    <script src="./index.js"></script>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div
+      class="header-container service-header-bg"
+      style="
+        background-image: url('./Images/Online-rechner_header_bg.svg') !important;
+      "
+    >
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid navbar-container justify-content-between">
+          <a href="./index.html"
+            ><img src="./Images/pflegepur_logo.svg" alt="PflegePur Logo"
+          /></a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a href="./services.html" class="nav-link">Service</a>
+                <ul class="dropdown-menu" style="background-color: #000000">
+                  <li
+                    style="
+                      margin-top: 0.35rem;
+                      margin-bottom: 0.7rem;
+                      border-bottom: 1px solid #ffffffbd;
+                      padding-bottom: 0.8rem;
+                    "
+                  >
+                    <a
+                      style="border: none; text-decoration: none"
+                      href="checklisten.html"
+                      >Checklisten</a
+                    >
+                  </li>
+                  <li
+                    style="
+                      margin-bottom: 0.7rem;
+                      border-bottom: 1px solid #ffffffbd;
+                      padding-bottom: 0.8rem;
+                    "
+                  >
+                    <a
+                      style="border: none; text-decoration: none"
+                      href="online_rechner.html"
+                      >Online-Rechner</a
+                    >
+                  </li>
+                  <li style="margin-bottom: 0.5rem">
+                    <a
+                      style="border: none; text-decoration: none"
+                      href="musteranschreiben.html"
+                      >Musteranschreiben</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="blog.html"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="newsundratgeber.html"
+                  >News und Ratgeber</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="marktplatz.html"
+                  >Marktplatz</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="buecher.html"
+                  >Bücher</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  style="border: none"
+                  aria-current="page"
+                  href="academy.html"
+                  >Academy</a
+                >
+              </li>
+              <li class="nav-item nav-btn">
+                <button class="nav-link" aria-current="page" style="position: relative;">
+                  <a
+                    href="./partner.html"
+                    style="
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      height: 100%;
+                      border-radius: 10px;
+                      width: 100%;
+                    "
+                  ></a>
+                  Partner werden!
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="service-header-content">
+        <span
+          >Für Pflegegrad, Pflegekosten und mehr - schnell, einfach,
+          präzise</span
+        >
+        <div>Online-Rechner</div>
+      </div>
+    </div>
+
+    <!-- ########################### Online Rechner SECTION 1 ########################### -->
+
+    <div class="uberuns-container">
+      <div class="uberuns-row row">
+        <div class="col-md-6 uberuns-left d-none d-md-block">
+          <img src="./Images/Online_rechner_section1_img.svg" alt="" />
+        </div>
+        <div class="col-md-6 uberuns-left d-block d-md-none">
+          <img src="./Images/Online_rechner_section1_img_sm.svg" alt="" />
+        </div>
+        <div class="col-md-6 uberuns-right">
+          <div class="col-12 uberuns-section1-content">
+            Bei uns finden Sie eine Vielzahl an Online-Rechnern, die Ihnen dabei
+            helfen, schnell und unkompliziert wichtige Informationen zu Ihren
+            individuellen Pflegesituationen zu erhalten. Ob es um die Einstufung
+            in einen Pflegegrad, die Berechnung von Pflegeleistungen oder die
+            Kostenübersicht für stationäre und ambulante Pflege geht – unsere
+            Tools unterstützen Sie dabei, den Überblick zu behalten und
+            fundierte Entscheidungen zu treffen. <br />
+            <div class="mt-2 mb-2">Unsere verfügbaren Rechner:</div>
+            <ul class="mb-4">
+              <li>
+                Rechner Pflegegrad: Ermitteln Sie Ihren oder den Pflegegrad
+                Ihrer Angehörigen einfach und schnell.
+              </li>
+              <li>
+                Rechner Pflegeleistungen: Finden Sie heraus, welche
+                Pflegeleistungen Ihnen zustehen und wie viel Unterstützung Sie
+                erwarten können.
+              </li>
+              <li>
+                Rechner Pflegegeld: Berechnen Sie die Höhe des Pflegegeldes, das
+                Sie in Anspruch nehmen können.
+              </li>
+              <li>
+                Rechner Pflegekosten im Pflegeheim: Verschaffen Sie sich
+                Klarheit über die anfallenden Kosten bei der stationären Pflege.
+              </li>
+              <li>
+                Rechner Pflegekosten für ambulante Pflege: Kalkulieren Sie die
+                Kosten für pflegerische Unterstützung zu Hause.
+              </li>
+              <li>
+                Rechner Zuzahlungen: Ermitteln Sie, welche Zuzahlungen Sie für
+                verschiedene Pflegeleistungen leisten müssen.
+              </li>
+            </ul>
+            PflegePur steht für einfache Handhabung, präzise Ergebnisse und
+            zuverlässige Informationen. Nutzen Sie unsere Online-Rechner, um
+            Ihre Pflegefragen zu klären und die bestmögliche Unterstützung zu
+            finden. Wir sind hier, um Ihnen den Weg durch das komplexe
+            Pflegesystem zu erleichtern.
+            <br />
+            <div class="mt-1">
+              Starten Sie jetzt und entdecken Sie, wie PflegePur Ihnen helfen
+              kann!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ########################### Online Rechner SECTION 2 ########################### -->
+
+    <div class="online-rechner-section2">
+      <button
+        class="online-rechner-section2-btn1 online-rechner-section2-btn online-active-btn"
+      >
+        <a href="online_rechner.html"></a> RECHNER PFLEGEGRAD
+      </button>
+      <button class="online-rechner-section2-btn2 online-rechner-section2-btn">
+        <a href="./OnlineRechnerCategories/rechner_pflegeleistungen.html"></a>
+        RECHNER PFLEGELEISTUNGEN
+      </button>
+      <button class="online-rechner-section2-btn3 online-rechner-section2-btn">
+        <a href="./OnlineRechnerCategories/rechner_pflegegeld.html"></a> RECHNER
+        PFLEGEGELD
+      </button>
+      <button class="online-rechner-section2-btn4 online-rechner-section2-btn">
+        <a
+          href="./OnlineRechnerCategories/rechner_pflegekosten_im_pflegeheim.html"
+        ></a>
+        RECHNER PFLEGEKOSTEN IM PFLEGEHEIM
+      </button>
+      <button class="online-rechner-section2-btn5 online-rechner-section2-btn">
+        <a
+          href="./OnlineRechnerCategories/rechner_pflegekosten_fur_ambulante_pflege.html"
+        ></a>
+        RECHNER PFLEGEKOSTEN FÜR AMBULANTE PFLEGE
+      </button>
+      <button class="online-rechner-section2-btn6 online-rechner-section2-btn">
+        <a href="./OnlineRechnerCategories/rechner_zuzahlungen.html"></a>
+        RECHNER ZUZAHLUNGEN
+      </button>
+    </div>
+
+    <!-- ########################### Online Rechner SECTION 3 ########################### -->
+    <div class="online-rechner-section3-container">
+      <div class="online-rechner-section3-sub-container">
+        <div class="online-rechner-section3-heading">Pflegegradrechner</div>
+        <div class="online-rechner-section3-sub-heading">
+          Ihr schneller Weg zur ersten Pflegegrad-Einschätzung – unser
+          Pflegegradrechner
+        </div>
+
+        <div class="online-rechner-content">
+          Mit unserem Pflegegradrechner können Sie eine erste Orientierung
+          erhalten, ob und in welchem Umfang ein Pflegegrad beantragt werden
+          kann. Dieser Rechner ist speziell für erwachsene Pflegebedürftige
+          entwickelt worden und basiert auf den aktuellen Richtlinien des
+          Begutachtungsinstruments gemäß dem Elften Buch des Sozialgesetzbuches.
+          Nehmen Sie sich etwas Zeit und füllen Sie die einzelnen
+          Bewertungskriterien sorgfältig aus. Je genauer die Angaben, desto
+          realistischer ist das Ergebnis.
+        </div>
+        <br />
+        <div class="online-rechner-section3-content-bottom">
+          Bitte beachten Sie: Der Pflegegradrechner dient als Orientierungshilfe
+          und ersetzt nicht den persönlichen Antrag bei den zuständigen Stellen.
+          Die endgültige Entscheidung über den Pflegegrad trifft der
+          Medizinische Dienst (MD). Verwenden Sie den Rechner, um sich
+          bestmöglich auf den Antrag vorzubereiten und eine fundierte
+          Einschätzung zu erhalten.
+        </div>
+
+        <!-- ######################## Online Rechner Section 3 Buttons ######################## -->
+
+        <div class="online-rechner-section3-buttons">
+          <button
+            id="module1-btn"
+            class="online-rechner-section3-btn1 online-rechner-section3-btn active-btn2"
+          >
+            Modul 1
+          </button>
+          <button class="online-rechner-section3-btn" id="module2-btn">
+            Modul 2
+          </button>
+          <button class="online-rechner-section3-btn" id="module3-btn">
+            Modul 3
+          </button>
+          <button class="online-rechner-section3-btn" id="module4-btn">
+            Modul 4
+          </button>
+          <button class="online-rechner-section3-btn" id="module5-btn">
+            Modul 5
+          </button>
+          <button class="online-rechner-section3-btn" id="module6-btn">
+            Modul 6
+          </button>
+        </div>
+
+        <!-- ######################## Online Rechner Section 3 Form ######################## -->
+
+        <!-- ######################## MODULE 1 FORM ######################## -->
+        <div
+          class="online-rechner-section3-form"
+          style="display: block"
+          id="module1Form"
+        >
+          <div class="online-rechner-section3-form-heading">1. Mobilität</div>
+          <div class="online-rechner-section3-form-sub-heading">
+            Die Gutachterin oder der Gutachter schaut sich die körperliche
+            Beweglichkeit an. Zum Beispiel: Kann die betroffene Person alleine
+            aufstehen und vom Bett ins Badezimmer gehen? Kann sie sich
+            selbstständig in den eigenen vier Wänden bewegen, ist Treppensteigen
+            möglich?
+          </div>
+
+          <form class="row" action="">
+            <div class="col-md-4">
+              <label for="online-rechner-input1"
+                >1.1 Positionswechsel im Bett</label
+              >
+              <select name="" id="online-rechner-input1">
+                <option value="0">Selbstständig</option>
+                <option value="1">Überwiegend selbstständig</option>
+                <option value="2">Überwiegend unselbstständig</option>
+                <option value="3">Unselbstständig</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input2"
+                >1.2 Halten einer stabilen Sitzposition</label
+              >
+              <select name="" id="online-rechner-input2">
+                <option value="0">Selbstständig</option>
+                <option value="1">Überwiegend selbstständig</option>
+                <option value="2">Überwiegend unselbstständig</option>
+                <option value="3">Unselbstständig</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input3">1.3 Umsetzen</label>
+              <select name="" id="online-rechner-input3">
+                <option value="0">Selbstständig</option>
+                <option value="1">Überwiegend selbstständig</option>
+                <option value="2">Überwiegend unselbstständig</option>
+                <option value="3">Unselbstständig</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input4"
+                >1.4 Fortwegen innerhalb des Wohnbereichs</label
+              >
+              <select name="" id="online-rechner-input4">
+                <option value="0">Selbstständig</option>
+                <option value="1">Überwiegend selbstständig</option>
+                <option value="2">Überwiegend unselbstständig</option>
+                <option value="3">Unselbstständig</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input5">1.5 Treppensteigen</label>
+              <select name="" id="online-rechner-input5">
+                <option value="0">Selbstständig</option>
+                <option value="1">Überwiegend selbstständig</option>
+                <option value="2">Überwiegend unselbstständig</option>
+                <option value="3">Unselbstständig</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input6"
+                >1.6 Gebrauchsfähigkeit beider Arme und Beine</label
+              >
+              <select name="" id="online-rechner-input6">
+                <option value="0">Ja</option>
+                <option value="1">Nein</option>
+              </select>
+            </div>
+
+            <div class="text-center">
+              <button class="online-rechner-section3-form-btn">
+                Pflegegrad berechnen
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- ######################## MODULE 2 FORM ######################## -->
+        <div class="online-rechner-section3-form" id="module2Form">
+          <div class="online-rechner-section3-form-heading">
+            2. Kognitive & kommunikative Fähigkeiten
+          </div>
+          <div class="online-rechner-section3-form-sub-heading">
+            Dieser Bereich umfasst das Verstehen und Reden. Zum Beispiel: Kann
+            sich die betroffene Person zeitlich und räumlich orientieren?
+            Versteht sie Sachverhalte, erkennt sie Risiken und kann sie
+            Gespräche mit anderen Menschen führen?
+          </div>
+
+          <form class="row" action="">
+            <div class="col-md-4">
+              <label for="online-rechner-input21"
+                >2.1 Erkennen von Personen aus dem näheren Umfeld</label
+              >
+              <select name="" id="">
+                <option value="0">Vorhanden / unbeeinträchtigt</option>
+                <option value="1">Größenteils vorhanden</option>
+                <option value="2">In geringem Maße vorhanden</option>
+                <option value="3">Nicht vorhanden</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input22"
+                >2.2 Örtliche Orientierung</label
+              >
+              <select name="" id="">
+                <option value="0">Vorhanden / unbeeinträchtigt</option>
+                <option value="1">Größenteils vorhanden</option>
+                <option value="2">In geringem Maße vorhanden</option>
+                <option value="3">Nicht vorhanden</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input23"
+                >2.3 Zeitliche Orientierung</label
+              >
+              <select name="" id="">
+                <option value="0">Vorhanden / unbeeinträchtigt</option>
+                <option value="1">Größenteils vorhanden</option>
+                <option value="2">In geringem Maße vorhanden</option>
+                <option value="3">Nicht vorhanden</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input24"
+                >2.4 Erinnern an wesentliche Ereignisse oder
+                Beobachtungen</label
+              >
+              <select name="" id="">
+                <option value="0">Vorhanden / unbeeinträchtigt</option>
+                <option value="1">Größenteils vorhanden</option>
+                <option value="2">In geringem Maße vorhanden</option>
+                <option value="3">Nicht vorhanden</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input25"
+                >2.5 Steuern von mehrschrittigen Alltagshandlungen</label
+              >
+              <select name="" id="">
+                <option value="0">Vorhanden / unbeeinträchtigt</option>
+                <option value="1">Größenteils vorhanden</option>
+                <option value="2">In geringem Maße vorhanden</option>
+                <option value="3">Nicht vorhanden</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input26"
+                >2.6 Treffen von Entscheidungen im Alltagsleben</label
+              >
+              <select name="" id="">
+                <option value="0">Vorhanden / unbeeinträchtigt</option>
+                <option value="1">Größenteils vorhanden</option>
+                <option value="2">In geringem Maße vorhanden</option>
+                <option value="3">Nicht vorhanden</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input27"
+                >2.7 Verstehen von Sachverhalten und Informationen</label
+              >
+              <select name="" id="">
+                <option value="0">Vorhanden / unbeeinträchtigt</option>
+                <option value="1">Größenteils vorhanden</option>
+                <option value="2">In geringem Maße vorhanden</option>
+                <option value="3">Nicht vorhanden</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input28"
+                >2.8 Erkennen von Risiken und Gefahren</label
+              >
+              <select name="" id="">
+                <option value="0">Vorhanden / unbeeinträchtigt</option>
+                <option value="1">Größenteils vorhanden</option>
+                <option value="2">In geringem Maße vorhanden</option>
+                <option value="3">Nicht vorhanden</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input29"
+                >2.9 Mitteilen von elementaren Bedürfnissen</label
+              >
+              <select name="" id="">
+                <option value="0">Vorhanden / unbeeinträchtigt</option>
+                <option value="1">Größenteils vorhanden</option>
+                <option value="2">In geringem Maße vorhanden</option>
+                <option value="3">Nicht vorhanden</option>
+              </select>
+            </div>
+
+            <div class="col-md-6">
+              <label for="online-rechner-input210"
+                >2.10 Verstehen von Aufforderungen</label
+              >
+              <select name="" id="">
+                <option value="0">Vorhanden / unbeeinträchtigt</option>
+                <option value="1">Größenteils vorhanden</option>
+                <option value="2">In geringem Maße vorhanden</option>
+                <option value="3">Nicht vorhanden</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="online-rechner-input211"
+                >2.11 Beteiligen an einem Gespräch</label
+              >
+              <select name="" id="">
+                <option value="0">Vorhanden / unbeeinträchtigt</option>
+                <option value="1">Größenteils vorhanden</option>
+                <option value="2">In geringem Maße vorhanden</option>
+                <option value="3">Nicht vorhanden</option>
+              </select>
+            </div>
+
+            <div class="text-center">
+              <button class="online-rechner-section3-form-btn">
+                Pflegegrad berechnen
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- ######################## MODULE 3 FORM ######################## -->
+        <div class="online-rechner-section3-form" id="module3Form">
+          <div class="online-rechner-section3-form-heading">
+            3. Verhaltensweisen & psychische Problemlagen
+          </div>
+          <div class="online-rechner-section3-form-sub-heading">
+            Hierunter fallen unter anderem Unruhe in der Nacht oder Ängste und
+            Aggressionen, die für die pflegebedürftige Person, aber auch für
+            ihre Angehörigen, belastend sind. Auch wenn Abwehrreaktionen bei
+            pflegerischen Maßnahmen bestehen, wird dies hier berücksichtigt.
+          </div>
+
+          <form class="row" action="">
+            <div class="col-md-4">
+              <label for="online-rechner-input31"
+                >3.1 Motorisch geprägte Verhaltensauffälligkeiten (Wie oft muss
+                eine Pflegeperson eingreifen/unterstützen?)</label
+              >
+              <select name="" id="">
+                <option value="0">
+                  Motorisch geprägte Verhaltensauffälligkeiten (nie oder sehr
+                  selten)
+                </option>
+                <option value="1">
+                  Selten (ein- bis dreimal innerhalb von zwei Wochen)
+                </option>
+                <option value="2">
+                  Häufig (zweimal bis mehrmals wöchentlich, aber nicht täglich)
+                </option>
+                <option value="3">Täglich</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input32">3.2 Nächtliche Unruhe</label>
+              <select name="" id="">
+                <option value="0">Nie oder sehr selten</option>
+                <option value="1">
+                  Selten (ein- bis dreimal innerhalb von zwei Wochen)
+                </option>
+                <option value="2">
+                  Häufig (zweimal bis mehrmals wöchentlich, aber nicht täglich)
+                </option>
+                <option value="3">Täglich</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input33"
+                >3.3 Selbstschädigendes und autoaggressives Verhalten</label
+              >
+              <select name="" id="">
+                <option value="0">Nie oder sehr selten</option>
+                <option value="1">
+                  Selten (ein- bis dreimal innerhalb von zwei Wochen)
+                </option>
+                <option value="2">
+                  Häufig (zweimal bis mehrmals wöchentlich, aber nicht täglich)
+                </option>
+                <option value="3">Täglich</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input34"
+                >3.4 Beschädigen von Gegenständen</label
+              >
+              <select name="" id="">
+                <option value="0">Nie oder sehr selten</option>
+                <option value="1">
+                  Selten (ein- bis dreimal innerhalb von zwei Wochen)
+                </option>
+                <option value="2">
+                  Häufig (zweimal bis mehrmals wöchentlich, aber nicht täglich)
+                </option>
+                <option value="3">Täglich</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input35"
+                >3.5 Physisch aggressives Verhalten gegenüber anderen
+                Personen</label
+              >
+              <select name="" id="">
+                <option value="0">Nie oder sehr selten</option>
+                <option value="1">
+                  Selten (ein- bis dreimal innerhalb von zwei Wochen)
+                </option>
+                <option value="2">
+                  Häufig (zweimal bis mehrmals wöchentlich, aber nicht täglich)
+                </option>
+                <option value="3">Täglich</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input36">3.6 Verbale Aggression</label>
+              <select name="" id="">
+                <option value="0">Nie oder sehr selten</option>
+                <option value="1">
+                  Selten (ein- bis dreimal innerhalb von zwei Wochen)
+                </option>
+                <option value="2">
+                  Häufig (zweimal bis mehrmals wöchentlich, aber nicht täglich)
+                </option>
+                <option value="3">Täglich</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input37"
+                >3.7 Andere pflegerelevante vokale Auffälligkeiten</label
+              >
+              <select name="" id="">
+                <option value="0">Nie oder sehr selten</option>
+                <option value="1">
+                  Selten (ein- bis dreimal innerhalb von zwei Wochen)
+                </option>
+                <option value="2">
+                  Häufig (zweimal bis mehrmals wöchentlich, aber nicht täglich)
+                </option>
+                <option value="3">Täglich</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input38"
+                >3.8 Abwehr pflegerischer und anderer unterstützender
+                Maßnahmen</label
+              >
+              <select name="" id="">
+                <option value="0">Nie oder sehr selten</option>
+                <option value="1">
+                  Selten (ein- bis dreimal innerhalb von zwei Wochen)
+                </option>
+                <option value="2">
+                  Häufig (zweimal bis mehrmals wöchentlich, aber nicht täglich)
+                </option>
+                <option value="3">Täglich</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input39">3.9 Wahnvorstellungen</label>
+              <select name="" id="">
+                <option value="0">Nie oder sehr selten</option>
+                <option value="1">
+                  Selten (ein- bis dreimal innerhalb von zwei Wochen)
+                </option>
+                <option value="2">
+                  Häufig (zweimal bis mehrmals wöchentlich, aber nicht täglich)
+                </option>
+                <option value="3">Täglich</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input310">3.10 Ängste</label>
+              <select name="" id="">
+                <option value="0">Nie oder sehr selten</option>
+                <option value="1">
+                  Selten (ein- bis dreimal innerhalb von zwei Wochen)
+                </option>
+                <option value="2">
+                  Häufig (zweimal bis mehrmals wöchentlich, aber nicht täglich)
+                </option>
+                <option value="3">Täglich</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input311"
+                >3.11 Antriebslosigkeit bei depressiver Stimmungslage</label
+              >
+              <select name="" id="">
+                <option value="0">Nie oder sehr selten</option>
+                <option value="1">
+                  Selten (ein- bis dreimal innerhalb von zwei Wochen)
+                </option>
+                <option value="2">
+                  Häufig (zweimal bis mehrmals wöchentlich, aber nicht täglich)
+                </option>
+                <option value="3">Täglich</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input312"
+                >3.12 Sozial inadäquate Verhaltensweisen</label
+              >
+              <select name="" id="">
+                <option value="0">Nie oder sehr selten</option>
+                <option value="1">
+                  Selten (ein- bis dreimal innerhalb von zwei Wochen)
+                </option>
+                <option value="2">
+                  Häufig (zweimal bis mehrmals wöchentlich, aber nicht täglich)
+                </option>
+                <option value="3">Täglich</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label for="online-rechner-input313"
+                >3.13 Sonstige pflegerelevante inadäquate Handlungen</label
+              >
+              <select name="" id="">
+                <option value="0">Nie oder sehr selten</option>
+                <option value="1">
+                  Selten (ein- bis dreimal innerhalb von zwei Wochen)
+                </option>
+                <option value="2">
+                  Häufig (zweimal bis mehrmals wöchentlich, aber nicht täglich)
+                </option>
+                <option value="3">Täglich</option>
+              </select>
+            </div>
+
+            <div class="text-center">
+              <button class="online-rechner-section3-form-btn">
+                Pflegegrad berechnen
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- ######################## MODULE 4 FORM ######################## -->
+        <div class="online-rechner-section3-form" id="module4Form">
+          <div class="online-rechner-section3-form-heading">
+            4. Selbstversorgung
+          </div>
+          <div class="online-rechner-section3-form-sub-heading">
+            Kann sich die Antragstellerin oder der Antragsteller sich zum
+            Beispiel waschen und anziehen, kann sie oder er selbstständig die
+            Toilette aufsuchen sowie essen und trinken?
+          </div>
+
+          <form class="row" action="">
+            <div class="col-md-4">
+              <label for="online-rechner-input41"
+                >4.1 Waschen des vorderen Oberkörpers</label
+              >
+              <select name="" id="">
+                <option value="0">Selbstständig</option>
+                <option value="1">Überwiegend selbstständig</option>
+                <option value="2">Überwiegend unselbstständig</option>
+                <option value="3">Unselbstständig</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input42"
+                >4.2 Körperpflege im Bereich des Kopfes</label
+              >
+              <select name="" id="">
+                <option value="0">Selbstständig</option>
+                <option value="1">Überwiegend selbstständig</option>
+                <option value="2">Überwiegend unselbstständig</option>
+                <option value="3">Unselbstständig</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input43"
+                >4.3 Waschen des Intimbereichs</label
+              >
+              <select name="" id="">
+                <option value="0">Selbstständig</option>
+                <option value="1">Überwiegend selbstständig</option>
+                <option value="2">Überwiegend unselbstständig</option>
+                <option value="3">Unselbstständig</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input44"
+                >4.4 Duschen und Baden einschließlich Waschen der Haare</label
+              >
+              <select name="" id="">
+                <option value="0">Selbstständig</option>
+                <option value="1">Überwiegend selbstständig</option>
+                <option value="2">Überwiegend unselbstständig</option>
+                <option value="3">Unselbstständig</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input45"
+                >4.5 An- und Auskleiden des Oberkörpers</label
+              >
+              <select name="" id="">
+                <option value="0">Selbstständig</option>
+                <option value="1">Überwiegend selbstständig</option>
+                <option value="2">Überwiegend unselbstständig</option>
+                <option value="3">Unselbstständig</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input46"
+                >4.6 An- und Auskleiden des Unterkörpers</label
+              >
+              <select name="" id="">
+                <option value="0">Selbstständig</option>
+                <option value="1">Überwiegend selbstständig</option>
+                <option value="2">Überwiegend unselbstständig</option>
+                <option value="3">Unselbstständig</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input47"
+                >4.7 Mundgerechtes Zubereiten der Nahrung und Eingießen von
+                Getränken</label
+              >
+              <select name="" id="">
+                <option value="0">Selbstständig</option>
+                <option value="1">Überwiegend selbstständig</option>
+                <option value="2">Überwiegend unselbstständig</option>
+                <option value="3">Unselbstständig</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input48">4.8 Essen</label>
+              <select name="" id="">
+                <option value="0">Selbstständig</option>
+                <option value="1">Überwiegend selbstständig</option>
+                <option value="2">Überwiegend unselbstständig</option>
+                <option value="3">Unselbstständig</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input49">4.9 Trinken</label>
+              <select name="" id="">
+                <option value="0">Selbstständig</option>
+                <option value="1">Überwiegend selbstständig</option>
+                <option value="2">Überwiegend unselbstständig</option>
+                <option value="3">Unselbstständig</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input410"
+                >4.10 Benutzen einer Toilette oder eines Toilettenstuhls</label
+              >
+              <select name="" id="">
+                <option value="0">Selbstständig</option>
+                <option value="1">Überwiegend selbstständig</option>
+                <option value="2">Überwiegend unselbstständig</option>
+                <option value="3">Unselbstständig</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input411"
+                >4.11 Bewältigen der Folgen einer Harninkontinenz und Umgang mit
+                Dauerkatheter und Urostoma</label
+              >
+              <select name="" id="">
+                <option value="0">Entfällt oder selbstständig</option>
+                <option value="1">Überwiegend selbstständig</option>
+                <option value="2">Überwiegend unselbstständig</option>
+                <option value="3">Unselbstständig</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input412"
+                >4.12 Bewältigen der Folgen einer Stuhlinkontinenz und Umgang
+                mit Stoma</label
+              >
+              <select name="" id="">
+                <option value="0">Entfällt oder selbstständig</option>
+                <option value="1">Überwiegend selbstständig</option>
+                <option value="2">Überwiegend unselbstständig</option>
+                <option value="3">Unselbstständig</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label for="online-rechner-input413"
+                >4.13 Versorgung mit Hilfe - Ernährung parenteral oder über
+                Sonde</label
+              >
+              <select name="" id="">
+                <option value="0">
+                  Entfällt, selbstständig, Versorgung mit Hilfe (aber nicht
+                  täglich, nicht auf Dauer)
+                </option>
+                <option value="1">
+                  Ausschließlich oder nahezu ausschließlich
+                </option>
+                <option value="2">
+                  Täglich, zusätzlich zu oraler Ernährung
+                </option>
+              </select>
+            </div>
+
+            <div class="text-center">
+              <button class="online-rechner-section3-form-btn">
+                Pflegegrad berechnen
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- ######################## MODULE 5 FORM ######################## -->
+        <div class="online-rechner-section3-form" id="module5Form">
+          <div class="online-rechner-section3-form-heading">
+            5. Bewältigung von & selbstständiger Umgang mit
+            krankheits-/therapiebedingten Anforderungen
+          </div>
+          <div class="online-rechner-section3-form-sub-heading">
+            Die Gutachterin oder der Gutachter schaut, ob die betroffene Person
+            zum Beispiel Medikamente selbst einnehmen, den Blutzucker
+            eigenständig messen, mit Hilfsmitteln wie Prothesen oder Rollator
+            umgehen und eine Ärztin beziehungsweise einen Arzt aufsuchen kann.
+          </div>
+
+          <form class="row" action="">
+            <div class="col-md-4">
+              <label for="online-rechner-input51">5.1 Medikation</label>
+              <select name="" id="">
+                <option value="0">Entfällt oder selbstständig</option>
+                <option value="1">1 x pro Monat</option>
+                <option value="3">2 x pro Monat</option>
+                <option value="4">3 x pro Monat</option>
+                <option value="5">4 x pro Monat</option>
+                <option value="6">2 x pro Woche</option>
+                <option value="7">3 x pro Woche</option>
+                <option value="8">4 x pro Woche</option>
+                <option value="9">5 x pro Woche</option>
+                <option value="10">6 x pro Woche</option>
+                <option value="11">7 x pro Woche (1 x pro Tag)</option>
+                <option value="120">2 x pro Tag</option>
+                <option value="13">3 x pro Tag</option>
+                <option value="14">4 x pro Tag</option>
+                <option value="15">5 x pro Tag</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input52">5.2 Injektionen</label>
+              <select name="" id="">
+                <option value="0">Entfällt oder selbstständig</option>
+                <option value="1">1 x pro Monat</option>
+                <option value="3">2 x pro Monat</option>
+                <option value="4">3 x pro Monat</option>
+                <option value="5">4 x pro Monat</option>
+                <option value="6">2 x pro Woche</option>
+                <option value="7">3 x pro Woche</option>
+                <option value="8">4 x pro Woche</option>
+                <option value="9">5 x pro Woche</option>
+                <option value="10">6 x pro Woche</option>
+                <option value="11">7 x pro Woche (1 x pro Tag)</option>
+                <option value="120">2 x pro Tag</option>
+                <option value="13">3 x pro Tag</option>
+                <option value="14">4 x pro Tag</option>
+                <option value="15">5 x pro Tag</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input53"
+                >5.3 Versorgung intravenöser Zugänge (Port)</label
+              >
+              <select name="" id="">
+                <option value="0">Entfällt oder selbstständig</option>
+                <option value="1">1 x pro Monat</option>
+                <option value="3">2 x pro Monat</option>
+                <option value="4">3 x pro Monat</option>
+                <option value="5">4 x pro Monat</option>
+                <option value="6">2 x pro Woche</option>
+                <option value="7">3 x pro Woche</option>
+                <option value="8">4 x pro Woche</option>
+                <option value="9">5 x pro Woche</option>
+                <option value="10">6 x pro Woche</option>
+                <option value="11">7 x pro Woche (1 x pro Tag)</option>
+                <option value="120">2 x pro Tag</option>
+                <option value="13">3 x pro Tag</option>
+                <option value="14">4 x pro Tag</option>
+                <option value="15">5 x pro Tag</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input54"
+                >5.4 Absaugen und Sauerstoffgabe</label
+              >
+              <select name="" id="">
+                <option value="0">Entfällt oder selbstständig</option>
+                <option value="1">1 x pro Monat</option>
+                <option value="3">2 x pro Monat</option>
+                <option value="4">3 x pro Monat</option>
+                <option value="5">4 x pro Monat</option>
+                <option value="6">2 x pro Woche</option>
+                <option value="7">3 x pro Woche</option>
+                <option value="8">4 x pro Woche</option>
+                <option value="9">5 x pro Woche</option>
+                <option value="10">6 x pro Woche</option>
+                <option value="11">7 x pro Woche (1 x pro Tag)</option>
+                <option value="120">2 x pro Tag</option>
+                <option value="13">3 x pro Tag</option>
+                <option value="14">4 x pro Tag</option>
+                <option value="15">5 x pro Tag</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input55"
+                >5.5 Einreibungen oder Kälte- und Wärmeanwendungen</label
+              >
+              <select name="" id="">
+                <option value="0">Entfällt oder selbstständig</option>
+                <option value="1">1 x pro Monat</option>
+                <option value="3">2 x pro Monat</option>
+                <option value="4">3 x pro Monat</option>
+                <option value="5">4 x pro Monat</option>
+                <option value="6">2 x pro Woche</option>
+                <option value="7">3 x pro Woche</option>
+                <option value="8">4 x pro Woche</option>
+                <option value="9">5 x pro Woche</option>
+                <option value="10">6 x pro Woche</option>
+                <option value="11">7 x pro Woche (1 x pro Tag)</option>
+                <option value="120">2 x pro Tag</option>
+                <option value="13">3 x pro Tag</option>
+                <option value="14">4 x pro Tag</option>
+                <option value="15">5 x pro Tag</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input56"
+                >5.6 Messung und Deutung von Körperzuständen</label
+              >
+              <select name="" id="">
+                <option value="0">Entfällt oder selbstständig</option>
+                <option value="1">1 x pro Monat</option>
+                <option value="3">2 x pro Monat</option>
+                <option value="4">3 x pro Monat</option>
+                <option value="5">4 x pro Monat</option>
+                <option value="6">2 x pro Woche</option>
+                <option value="7">3 x pro Woche</option>
+                <option value="8">4 x pro Woche</option>
+                <option value="9">5 x pro Woche</option>
+                <option value="10">6 x pro Woche</option>
+                <option value="11">7 x pro Woche (1 x pro Tag)</option>
+                <option value="120">2 x pro Tag</option>
+                <option value="13">3 x pro Tag</option>
+                <option value="14">4 x pro Tag</option>
+                <option value="15">5 x pro Tag</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input57"
+                >5.7 Körpernahe Hilfsmittel</label
+              >
+              <select name="" id="">
+                <option value="0">Entfällt oder selbstständig</option>
+                <option value="1">1 x pro Monat</option>
+                <option value="3">2 x pro Monat</option>
+                <option value="4">3 x pro Monat</option>
+                <option value="5">4 x pro Monat</option>
+                <option value="6">2 x pro Woche</option>
+                <option value="7">3 x pro Woche</option>
+                <option value="8">4 x pro Woche</option>
+                <option value="9">5 x pro Woche</option>
+                <option value="10">6 x pro Woche</option>
+                <option value="11">7 x pro Woche (1 x pro Tag)</option>
+                <option value="120">2 x pro Tag</option>
+                <option value="13">3 x pro Tag</option>
+                <option value="14">4 x pro Tag</option>
+                <option value="15">5 x pro Tag</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input58"
+                >5.8 Verbandwechsel und Wundversorgung</label
+              >
+              <select name="" id="">
+                <option value="0">
+                  Nie oder seltener als einmal wöchentlich
+                </option>
+                <option value="1">ein- bis mehrmals wöchentlich</option>
+                <option value="2">ein- bis zweimal täglich</option>
+                <option value="3">mindestens dreimal täglich</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input59"
+                >5.9 Versorgung mit Stoma</label
+              >
+              <select name="" id="">
+                <option value="0">
+                  Nie oder seltener als einmal wöchentlich
+                </option>
+                <option value="1">ein- bis mehrmals wöchentlich</option>
+                <option value="2">ein- bis zweimal täglich</option>
+                <option value="3">mindestens dreimal täglich</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input510"
+                >5.10 Regelmäßige Einmalkatheterisierung und Nutzung von
+                Abführmethoden</label
+              >
+              <select name="" id="">
+                <option value="0">
+                  Nie oder seltener als einmal wöchentlich
+                </option>
+                <option value="1">ein- bis mehrmals wöchentlich</option>
+                <option value="2">ein- bis zweimal täglich</option>
+                <option value="3">mindestens dreimal täglich</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input511"
+                >5.11 Therapiemaßnahmen in häuslicher Umgebung</label
+              >
+              <select name="" id="">
+                <option value="0">
+                  Nie oder seltener als einmal wöchentlich
+                </option>
+                <option value="1">ein- bis mehrmals wöchentlich</option>
+                <option value="2">ein- bis zweimal täglich</option>
+                <option value="3">mindestens dreimal täglich</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input512"
+                >5.12 Zeit- und technikintensive Maßnahmen in häuslicher
+                Umgebung</label
+              >
+              <select name="" id="">
+                <option value="0">Entfällt oder selbstständig</option>
+                <option value="1">Täglich</option>
+                <option value="2">1 x pro Monat</option>
+                <option value="3">2 x pro Monat</option>
+                <option value="4">3 x pro Monat</option>
+                <option value="5">4 x pro Monat (1 x pro Woche)</option>
+                <option value="6">2 x pro Woche</option>
+                <option value="7">3 x pro Woche</option>
+                <option value="8">4 x pro Woche</option>
+                <option value="9">5 x pro Woche</option>
+                <option value="10">6 x pro Woche</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input513">5.13 Arztbesuche</label>
+              <select name="" id="">
+                <option value="0">Entfällt</option>
+                <option value="1">1 x pro Monat</option>
+                <option value="2">2 x pro Monat</option>
+                <option value="3">3 x pro Monat</option>
+                <option value="4">4 x pro Monat (1 x pro Woche)</option>
+                <option value="5">2 x pro Woche</option>
+                <option value="6">3 x pro Woche</option>
+                <option value="7">4 x pro Woche</option>
+                <option value="8">5 x pro Woche</option>
+                <option value="9">6 x pro Woche</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input514"
+                >5.14 Besuch anderer medizinischer oder thera peutischer
+                Einrichtungen (bis zu 3 Std)</label
+              >
+              <select name="" id="">
+                <option value="0">Entfällt</option>
+                <option value="1">1 x pro Monat</option>
+                <option value="2">2 x pro Monat</option>
+                <option value="3">3 x pro Monat</option>
+                <option value="4">4 x pro Monat (1 x pro Woche)</option>
+                <option value="5">2 x pro Woche</option>
+                <option value="6">3 x pro Woche</option>
+                <option value="7">4 x pro Woche</option>
+                <option value="8">5 x pro Woche</option>
+                <option value="9">6 x pro Woche</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input515"
+                >5.15 Zeitlich ausgedehnte Besuche anderer medizinischer oder
+                therapeutischer Einrichtungen (länger als 3 Std.)</label
+              >
+              <select name="" id="">
+                <option value="0">Entfällt</option>
+                <option value="1">1 x pro Monat</option>
+                <option value="2">2 x pro Monat</option>
+                <option value="3">3 x pro Monat</option>
+                <option value="4">4 x pro Monat (1 x pro Woche)</option>
+                <option value="5">2 x pro Woche</option>
+                <option value="6">3 x pro Woche</option>
+                <option value="7">4 x pro Woche</option>
+                <option value="8">5 x pro Woche</option>
+                <option value="9">6 x pro Woche</option>
+              </select>
+            </div>
+
+            <div class="col-12">
+              <label for="online-rechner-input516"
+                >5.16 Einhaltung einer Diät und anderer krankheits- oder
+                therapiebedingter Verhaltensvorschriften, und zwar:</label
+              >
+              <select name="" id="">
+                <option value="0">Entfällt oder selbstständig</option>
+                <option value="1">
+                  Überwiegend selbstständig (Erinnerung/Anleitung ist mindestens
+                  einmal täglich notwendig)
+                </option>
+                <option value="2">
+                  Überwiegend unselbstständig (benötigt meistens
+                  Anleitung/Beaufsichtigung mehrmals täglich)
+                </option>
+                <option value="3">
+                  Unselbstständig (benötigt immer Anleitung/Beaufsichtigung)
+                </option>
+              </select>
+            </div>
+
+            <div class="text-center">
+              <button class="online-rechner-section3-form-btn">
+                Pflegegrad berechnen
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- ######################## MODULE 6 FORM ######################## -->
+        <div class="online-rechner-section3-form" id="module6Form">
+          <div class="online-rechner-section3-form-heading">
+            6. Gestaltung des Alltagslebens und sozialer Kontakte
+          </div>
+          <div class="online-rechner-section3-form-sub-heading">
+            Kann die betroffene Person zum Beispiel ihren Tagesablauf
+            selbstständig gestalten? Kann sie mit anderen Menschen in direkten
+            Kontakt treten oder die Skatrunde ohne Hilfe besuchen?
+          </div>
+
+          <form class="row" action="">
+            <div class="col-md-4">
+              <label for="online-rechner-input61"
+                >6.1 Gestaltung des Alltagslebens und Anpassung an
+                Veränderungen</label
+              >
+              <select name="" id="">
+                <option value="0">Selbstständig</option>
+                <option value="1">Überwiegend selbstständig</option>
+                <option value="2">Überwiegend unselbstständig</option>
+                <option value="3">Unselbstständig</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input62">6.2 Ruhen und Schlafen</label>
+              <select name="" id="">
+                <option value="0">Selbstständig</option>
+                <option value="1">Überwiegend selbstständig</option>
+                <option value="2">Überwiegend unselbstständig</option>
+                <option value="3">Unselbstständig</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input63">6.3 Sich beschäftigen</label>
+              <select name="" id="">
+                <option value="0">Selbstständig</option>
+                <option value="1">Überwiegend selbstständig</option>
+                <option value="2">Überwiegend unselbstständig</option>
+                <option value="3">Unselbstständig</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input64"
+                >6.4 Vornehmen von in die Zukunft gerichteten Planungen</label
+              >
+              <select name="" id="">
+                <option value="0">Selbstständig</option>
+                <option value="1">Überwiegend selbstständig</option>
+                <option value="2">Überwiegend unselbstständig</option>
+                <option value="3">Unselbstständig</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input65"
+                >6.5 Interaktion mit Personen im direkten Kontakt</label
+              >
+              <select name="" id="">
+                <option value="0">Selbstständig</option>
+                <option value="1">Überwiegend selbstständig</option>
+                <option value="2">Überwiegend unselbstständig</option>
+                <option value="3">Unselbstständig</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="online-rechner-input66"
+                >6.6 Kontaktpflege zu Personen außerhalb des direkten
+                Umfeldes</label
+              >
+              <select name="" id="">
+                <option value="0">Selbstständig</option>
+                <option value="1">Überwiegend selbstständig</option>
+                <option value="2">Überwiegend unselbstständig</option>
+                <option value="3">Unselbstständig</option>
+              </select>
+            </div>
+
+            <div class="text-center">
+              <button class="online-rechner-section3-form-btn">
+                Pflegegrad berechnen
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- ######################## Online Rechner Section 3 bottom ######################## -->
+        <div class="online-rechner-section3-bottom">
+          <div class="online-rechner-section3-bottom-heading">Ergebnis</div>
+          <div class="online-rechner-section3-heading-bottom">
+            <div>Module</div>
+            <div>Summe Einzelpunkte</div>
+          </div>
+
+          <div class="online-rechner-section3-inner-bottom">
+            <div style="padding-top: 0">1 - Mobilität</div>
+            <div>2 - Kognitive & kommunikative Fähigkeiten</div>
+            <div>3 - Verhaltensweisen & psychische Problemlagen</div>
+            <div>4 - Selbstversorgung</div>
+            <div>
+              5 - Bewältigung von & selbstständiger Umgang mit
+              krankheits-/therapiebedingten Anforderungen
+            </div>
+            <div>6 - Gestaltung des Alltagslebens und sozialer Kontakte</div>
+
+            <div class="online-rechner-section3-bottom-heading2">
+              PFLEGEGRAD:
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="width: 100%">
+      <img
+        class="page-bottom-img"
+        style="width: 100%; object-fit: cover; height: 100%"
+        src="./Images/Online_rechner_bottom.svg"
+        alt=""
+      />
+    </div>
+    <!-- ######################### FOOTER SECTION ######################### -->
+
+    <div class="footer-container">
+      <div class="footer-left-shape"></div>
+      <div class="footer-right-shape"></div>
+
+      <div class="row footer-main-row">
+        <div class="col-lg-4 footer-left">
+          <img src="./Images/pflegepur_logo.svg" alt="" />
+          <div class="footer-contact-div">
+            <div class="contact-div">
+              <img src="./Images/footer_email_icon.svg" alt="" />
+              <div class="contact-phone">E-Mail <br />kontakt@pflegepur.de</div>
+            </div>
+            <div class="contact-div">
+              <img src="./Images/footer_call_icon.svg" alt="" />
+              <div class="contact-time">Telefon <br />05151–7909862</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 footer-right">
+          <div class="row">
+            <div class="col-lg-3 col-6">
+              <span class="footer-items-heading">Seiten</span>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ueberuns.html">Über uns</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="newsundratgeber.html">News und Ratgeber</a></li>
+                <li><a href="marktplatz.html">Marktplatz</a></li>
+                <li><a href="buecher.html">Bücher</a></li>
+                <li><a href="academy.html">Academy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-6">
+              <span class="footer-items-heading">Services</span>
+              <ul>
+                <li><a href="checklisten.html">Checklisten </a></li>
+                <li>
+                  <a href="online_rechner.html">Online-Rechner</a>
+                </li>
+                <li><a href="musteranschreiben.html">Musteranschreiben</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <span
+                style="display: block; margin-bottom: 4rem"
+                class="footer-items-heading"
+                >Newsletter</span
+              >
+              <button class="footer-btn" style="position: relative">
+                <a
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                  "
+                  href="https://pflegepur.de/newsletter.php"
+                  target="_blank"
+                ></a>
+                Abonnieren Sie unseren Newsletter!
+              </button>
+              <div class="footer-icons-div">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100079595010397"
+                  target="_blank"
+                  ><img src="./Images/footer_fb_icon.svg" alt=""
+                /></a>
+                <a href="https://twitter.com/Pflege_Pur" target="_blank"
+                  ><img src="./Images/footer_x_icon.svg" alt=""
+                /></a>
+                <a
+                  href="https://open.spotify.com/show/6JACh2eflNeIcxU8U2ltyL"
+                  target="_blank"
+                  ><img src="./Images/footer_spotify_icon.svg" alt=""
+                /></a>
+                <a href="https://www.youtube.com/@PflegePur" target="_blank"
+                  ><img src="./Images/footer_utube_icon.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-flex">
+          <div class="footer-copyright" style="flex: 2">
+            Copyright © PflegePur
+          </div>
+          <div style="text-align: right" class="footer-bottom-flex-inner">
+            <a href="./impressum.html" class="footer-impressum"
+              >Impressum und Datenschutzerklärung</a
+            >
+            <a
+              target="_blank"
+              href="https://61cac9fd.sibforms.com/serve/MUIFAGHCIVlNnpFo6oZ8Bxe81qPMrQsIHzE3gZBM3cN41OqxlCOPZgqD00GPoBXSOr5OUmg4_xleR7Qsgn1T1UNQQH1le1Ws3QaZ_KhUrVPJBqD_yR_IykEsyz19cbQVNPHUiLc-avpokGlRq28zKceSlVbepTWnhMS4b3MKFh-UjB_67WhHhruMNmQj6DaFQTBAuCOEBppJpfM-"
+              class="footer-newsletter"
+            >
+              Newsletter-Abmeldung</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ######################## END ############################ -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
