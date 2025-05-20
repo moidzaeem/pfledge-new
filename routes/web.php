@@ -6,11 +6,14 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InnovationenController;
 use App\Http\Controllers\MarketplaceController;
 use App\Http\Controllers\OnlineRechner;
+use App\Http\Controllers\RegisterUserController;
 use App\Http\Controllers\SimpleController;
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\FormController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+
+
 
 Route::get('/', function (Request $request) {
     $news = [
@@ -260,3 +263,8 @@ Route::get('mein-pflegePur', function (){
 Route::get('/admin/login', function(){
     return view('auth.login');
 });
+
+// NEW DATA
+
+Route::get('/register-care-details',[RegisterUserController::class, 'showRegisterCareDetails'])->name('register.care.details');
+Route::post('/register-user-info', [RegisterUserController::class, 'registerUserTest'])->name('register.user.new');

@@ -3,8 +3,7 @@
 @include('components.header.head')
 
 <body>
-    <div class="header-container service-header-bg"
-        style="
+    <div class="header-container service-header-bg" style="
         background-image: url('{{ asset('assets/Images/Service_header_bg.svg') }}') !important;
       ">
         @include('components.header.header')
@@ -26,83 +25,88 @@
     <div class="index2-login-container mb-5">
         <div class="index2-login-cont index2-registration-cont">
             <div class="index2-login-heading">Registrierung</div>
+            <form action="{{route('register.user.new')}}" method="post" >
+                @csrf
+                <div class="registration-top-checkbox-containers">
+                    <div class="registration-top-checkbox-headings">Geschlecht</div>
 
-            <div class="registration-top-checkbox-containers">
-                <div class="registration-top-checkbox-headings">Geschlecht</div>
+                    <div class="index2-login-middle-cont index2-login-middle-cont11 " style="margin-top: 0.7rem;">
+                        <div class="index2-login-middle-left">
+                            <div class="index2-radio-group">
+                                <label class="index2-custom-radio">
+                                    <input type="radio" name="gender" value="0">
+                                    <span class="index2-radio-mark"></span>Männlich
+                                </label>
+                            </div>
+                        </div>
+                        <div class="index2-login-middle-left">
+                            <div class="index2-radio-group">
+                                <label class="index2-custom-radio">
+                                    <input type="radio" name="gender" value="1">
+                                    <span class="index2-radio-mark"></span>Weiblich
+                                </label>
+                            </div>
+                        </div>
 
-                <div class="index2-login-middle-cont index2-login-middle-cont11 " style="margin-top: 0.7rem;">
+                        <div class="index2-login-middle-left">
+                            <div class="index2-radio-group">
+                                <label class="index2-custom-radio">
+                                    <input type="radio" name="gender" value="2">
+                                    <span class="index2-radio-mark"></span>Divers
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="index2-input-container index2-input-container2 mt-2">
+                    <div class="index2-eamil-input"><input name="first_name" type="text" placeholder="Ihr Vorname"></div>
+                    <div class="index2-eamil-input"><input type="text" name="last_name" placeholder="Ihr Nachname"></div>
+
+
+                </div>
+
+
+                <div class="index2-input-container">
+                    <div class="index2-eamil-input"><input type="email" name="email" placeholder="Ihre E-Mail"></div>
+                    <div class="index2-password-container">
+                        <input type="password" class="index2PasswordInput" name="password" placeholder="Ihr Passwort">
+                        <span id="index2TogglePassword" class="index2-eye-icon index2TogglePassword">
+                            <i class="fa fa-eye-slash"></i>
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="index2-login-middle-cont " style="margin-top: 0.7rem;">
                     <div class="index2-login-middle-left">
                         <div class="index2-radio-group">
                             <label class="index2-custom-radio">
-                                <input type="radio" name="option" value="0">
-                                <span class="index2-radio-mark"></span>Männlich
+                                <input type="radio" name="terms" value="1">
+                                <span class="index2-radio-mark"></span>akzeptiere die AGB und die Datenschutzerklärung
+                                und
+                                willige in die Erstellung eines Profils auf PflegePur ein.
                             </label>
                         </div>
+
+
                     </div>
                     <div class="index2-login-middle-left">
                         <div class="index2-radio-group">
                             <label class="index2-custom-radio">
-                                <input type="radio" name="option" value="1">
-                                <span class="index2-radio-mark"></span>Weiblich
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="index2-login-middle-left">
-                        <div class="index2-radio-group">
-                            <label class="index2-custom-radio">
-                                <input type="radio" name="option" value="2">
-                                <span class="index2-radio-mark"></span>Divers
+                                <input type="radio" name="newsletter" value="2">
+                                <span class="index2-radio-mark"></span>Ja, ich möchte aktuelle Informationen zu Pflege
+                                und
+                                Gesundheit per E-Mail erhalten!
                             </label>
                         </div>
                     </div>
                 </div>
-            </div>
 
+                <div class="index2-login-btn"><button type="submit">Registrieren</button></div>
 
-            <div class="index2-input-container index2-input-container2 mt-2">
-                <div class="index2-eamil-input"><input type="text" placeholder="Ihr Vorname"></div>
-                <div class="index2-eamil-input"><input type="text" placeholder="Ihr Nachname"></div>
-
-
-            </div>
-
-
-            <div class="index2-input-container">
-                <div class="index2-eamil-input"><input type="email" placeholder="Ihre E-Mail"></div>
-                <div class="index2-password-container">
-                    <input type="password" class="index2PasswordInput" placeholder="Ihr Passwort">
-                    <span id="index2TogglePassword" class="index2-eye-icon index2TogglePassword">
-                        <i class="fa fa-eye-slash"></i>
-                    </span>
-                </div>
-
-            </div>
-
-            <div class="index2-login-middle-cont " style="margin-top: 0.7rem;">
-                <div class="index2-login-middle-left">
-                    <div class="index2-radio-group">
-                        <label class="index2-custom-radio">
-                            <input type="radio" name="option" value="1">
-                            <span class="index2-radio-mark"></span>akzeptiere die AGB und die Datenschutzerklärung und
-                            willige in die Erstellung eines Profils auf PflegePur ein.
-                        </label>
-                    </div>
-
-
-                </div>
-                <div class="index2-login-middle-left">
-                    <div class="index2-radio-group">
-                        <label class="index2-custom-radio">
-                            <input type="radio" name="option" value="2">
-                            <span class="index2-radio-mark"></span>Ja, ich möchte aktuelle Informationen zu Pflege und
-                            Gesundheit per E-Mail erhalten!
-                        </label>
-                    </div>
-                </div>
-            </div>
-
-            <div class="index2-login-btn"><button>Registrieren</button></div>
+            </form>
 
             {{-- <div class="index2-login-oder">
                 <div class="index2-login-oder-heading">Oder anmelden mit nur einem Klick</div>
