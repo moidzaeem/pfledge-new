@@ -125,10 +125,13 @@
             indviduell! <br /><br />Registrieren Sie sich jetzt und entdecken Sie,
             wie Mein PflegePur Ihnen den Alltag erleichtern kann.
         </div>
-
         <div class="mein-pflegpur-section2-btn text-center">
-            <button>Zur Registrierung</button>
+            <a href="{{ route('register') }}">
+                <button type="button">Zur Registrierung</button>
+            </a>
         </div>
+        
+        
     </div>
 
     @guest

@@ -17,6 +17,7 @@ class SecureHeaders
 
 public function handle($request, Closure $next)
 {
+    dd('asdf');
     $response = $next($request);
 
     // Content-Security-Policy aktualisieren, um alle Domains zu erlauben

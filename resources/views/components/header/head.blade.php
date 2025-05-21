@@ -2,6 +2,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>PflegePur - Ihr Partner für umfassende Pflege und Gesundheit </title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
@@ -15,15 +17,15 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
+{{-- 
     <meta name="google-adsense-account" content="ca-pub-8218213656808471">
 
 
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="985f611d-8977-47e6-9427-b1f4e5d959f1"
-        data-blockingmode="auto" type="text/javascript"></script>
+        data-blockingmode="auto" type="text/javascript"></script> --}}
 
     <!-- Matomo -->
-    <script>
+    {{-- <script>
         var _paq = window._paq = window._paq || [];
         /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
         _paq.push(['trackPageView']);
@@ -39,10 +41,10 @@
             g.src = '//cdn.matomo.cloud/pflegepur.matomo.cloud/matomo.js';
             s.parentNode.insertBefore(g, s);
         })();
-    </script>
+    </script> --}}
     <!-- End Matomo Code -->
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8218213656808471"
-        crossorigin="anonymous"></script>
+    {{-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8218213656808471"
+        crossorigin="anonymous"></script> --}}
 
 </head>

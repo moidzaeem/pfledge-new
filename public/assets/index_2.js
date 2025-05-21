@@ -1018,6 +1018,7 @@ document.addEventListener('DOMContentLoaded', function() {
           console.log("Opening Modal..."); // Debugging Log
           let myModal = new bootstrap.Modal(modalElement);
           myModal.show();
+          document.getElementById("registerCareForm").submit();
       } else {
           console.error("Modal element not found!");
       }

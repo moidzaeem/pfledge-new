@@ -1,10 +1,5 @@
 <?php
 
-// header("Content-Security-Policy: frame-src 'self' https://pflegepur.de https://pflegepur.de/partner/blog https://pflegepur.de/partner/blog/* https://pflegepur.de/partner/pflegegradrechner https://pflegepur.de/partner/pflegegeldrechner https://pflegepur.de/partner/pflegegradrechner/calculate;
-// frame-ancestors 'self' https://pflegeportal-hameln.de https://pflegeportal-hameln-pyrmont.de https://pflegeportal-pyrmont.de https://hameln-pyrmont.pflegepur.de;");
-
-
-
 use Illuminate\Http\Request;
 
 define('LARAVEL_START', microtime(true));

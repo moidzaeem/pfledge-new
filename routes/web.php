@@ -21,8 +21,7 @@ Route::get('/', function (Request $request) {
         ['title' => 'Beispiel-Nachricht 2', 'description' => 'Noch eine Beispielbeschreibung.', 'link' => '#'],
     ];
 
-    return response(view('welcome', compact('news')))
-        ->header("Content-Security-Policy", "frame-src 'self' https://pflegepur.de https://pflegeportal-hameln.de https://pflegeportal-hameln-pyrmont.de https://pflegeportal-pyrmont.de https://hameln-pyrmont.pflegepur.de;");
+    return response(view('welcome', compact('news')));
 });
 
 
@@ -265,6 +264,6 @@ Route::get('/admin/login', function(){
 });
 
 // NEW DATA
-
-Route::get('/register-care-details',[RegisterUserController::class, 'showRegisterCareDetails'])->name('register.care.details');
+Route::get('/register/care/details', [RegisterUserController::class, 'showRegisterCareDetails'])->name('register.care.details');
+Route::post('/register/care/details', [RegisterUserController::class, 'storeCareDetails'])->name('register.care.details.store');
 Route::post('/register-user-info', [RegisterUserController::class, 'registerUserTest'])->name('register.user.new');
